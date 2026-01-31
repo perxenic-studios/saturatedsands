@@ -1,6 +1,7 @@
 package dev.perxenic.saturatedsands;
 
 import dev.perxenic.saturatedsands.registry.SSConditionCodecs;
+import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 import net.neoforged.bus.api.IEventBus;
@@ -17,5 +18,9 @@ public class SaturatedSands {
         SSConditionCodecs.register(modEventBus);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+    }
+
+    public static ResourceLocation ssLoc(String path) {
+        return ResourceLocation.fromNamespaceAndPath(MODID, path);
     }
 }
