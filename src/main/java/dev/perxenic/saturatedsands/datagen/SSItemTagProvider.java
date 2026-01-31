@@ -27,12 +27,22 @@ public class SSItemTagProvider extends ItemTagsProvider {
     @Override
     protected void addTags(@NotNull HolderLookup.Provider provider) {
         TerracottaDatabase.TERRACOTTA_PATTERNS.forEach((name, pattern) -> {
-            Item[] items = (Item[]) pattern.entryList.stream().map(entry -> entry.block().asItem()).toArray();
-            tag(pattern.itemTag).add(items);
+            Item[] items = new Item[pattern.entryList.size()];
+            int i = 0;
+            for (TerracottaEntry terracottaEntry : pattern.entryList) {
+                items[i] = terracottaEntry.block().asItem();
+                i++;
+            }
+            tag(pattern.itemTag).add(items).add(pattern.fadedBlock.asItem());
         });
 
         TerracottaDatabase.TERRACOTTA_DYES.forEach((name, dye) -> {
-            Item[] items = (Item[]) dye.entryList.stream().map(entry -> entry.block().asItem()).toArray();
+            Item[] items = new Item[dye.entryList.size()];
+            int i = 0;
+            for (TerracottaEntry terracottaEntry : dye.entryList) {
+                items[i] = terracottaEntry.block().asItem();
+                i++;
+            }
             tag(dye.dyedItemTag).add(items);
         });
 

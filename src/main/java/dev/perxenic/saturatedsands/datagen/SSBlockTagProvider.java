@@ -2,9 +2,9 @@ package dev.perxenic.saturatedsands.datagen;
 
 import dev.perxenic.saturatedsands.SaturatedSands;
 import dev.perxenic.saturatedsands.infra.TerracottaDatabase;
+import dev.perxenic.saturatedsands.infra.TerracottaEntry;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -22,13 +22,23 @@ public class SSBlockTagProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         TerracottaDatabase.TERRACOTTA_PATTERNS.forEach((name, pattern) -> {
-            Block[] items = (Block[]) pattern.entryList.stream().map(entry -> entry.block().value()).toArray();
-            tag(pattern.blockTag).add(items);
+            Block[] blocks = new Block[pattern.entryList.size()];
+            int i = 0;
+            for (TerracottaEntry terracottaEntry : pattern.entryList) {
+                blocks[i] = terracottaEntry.block().get();
+                i++;
+            }
+            tag(pattern.blockTag).add(blocks).add(pattern.fadedBlock.get());
         });
 
         TerracottaDatabase.TERRACOTTA_DYES.forEach((name, dye) -> {
-            Block[] items = (Block[]) dye.entryList.stream().map(entry -> entry.block().value()).toArray();
-            tag(dye.dyedBlockTag).add(items);
+            Block[] blocks = new Block[dye.entryList.size()];
+            int i = 0;
+            for (TerracottaEntry terracottaEntry : dye.entryList) {
+                blocks[i] = terracottaEntry.block().get();
+                i++;
+            }
+            tag(dye.dyedBlockTag).add(blocks);
         });
     }
 }

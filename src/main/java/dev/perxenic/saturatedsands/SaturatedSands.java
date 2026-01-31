@@ -1,6 +1,7 @@
 package dev.perxenic.saturatedsands;
 
 import dev.perxenic.saturatedsands.registry.SSConditionCodecs;
+import dev.perxenic.saturatedsands.registry.SSTerracotta;
 import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
@@ -16,6 +17,7 @@ public class SaturatedSands {
 
     public SaturatedSands(IEventBus modEventBus, ModContainer modContainer) {
         SSConditionCodecs.register(modEventBus);
+        SSTerracotta.register(modEventBus);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
