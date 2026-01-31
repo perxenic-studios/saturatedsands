@@ -1,11 +1,11 @@
 package dev.perxenic.saturatedsands.content;
 
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
 import static dev.perxenic.saturatedsands.SaturatedSands.ssLoc;
+import static dev.perxenic.saturatedsands.infra.TerracottaPattern.patternedLoc;
 
 public class SSItemTags {
     public static class Pattern {
@@ -28,9 +28,5 @@ public class SSItemTags {
         public final static TagKey<Item> BLADE = ItemTags.create(patternedLoc("blade")); // Purple
         public final static TagKey<Item> ARROW = ItemTags.create(patternedLoc("arrow")); // Magenta
         public final static TagKey<Item> LEAF = ItemTags.create(patternedLoc("leaf")); // Pink
-
-        public static ResourceLocation patternedLoc(String name) {
-            return ssLoc("patterned_terracotta/" + name);
-        }
     }
 }
