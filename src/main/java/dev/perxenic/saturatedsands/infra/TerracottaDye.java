@@ -10,9 +10,14 @@ import java.util.List;
 public class TerracottaDye {
     public final TagKey<Item> itemTag;
 
+    public final TagKey<Item> dyedItemTag;
+    public final TagKey<Block> dyedBlockTag;
+
     public final List<TerracottaEntry> entryList = new ArrayList<>();
 
-    public TerracottaDye(TagKey<Item> itemTag) {
+    public TerracottaDye(TagKey<Item> itemTag, TagKey<Item> dyedItemTag, TagKey<Block> dyedBlockTag) {
         this.itemTag = itemTag;
+        this.dyedItemTag = dyedItemTag;
+        this.dyedBlockTag = dyedBlockTag;
     }
 }

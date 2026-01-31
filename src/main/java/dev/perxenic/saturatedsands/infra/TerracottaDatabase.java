@@ -32,22 +32,86 @@ public class TerracottaDatabase {
     }
 
     static {
-        TERRACOTTA_DYES.put("white", new TerracottaDye(Tags.Items.DYES_WHITE));
-        TERRACOTTA_DYES.put("light_gray", new TerracottaDye(Tags.Items.DYES_LIGHT_GRAY));
-        TERRACOTTA_DYES.put("gray", new TerracottaDye(Tags.Items.DYES_GRAY));
-        TERRACOTTA_DYES.put("black", new TerracottaDye(Tags.Items.DYES_BLACK));
-        TERRACOTTA_DYES.put("brown", new TerracottaDye(Tags.Items.DYES_BROWN));
-        TERRACOTTA_DYES.put("red", new TerracottaDye(Tags.Items.DYES_RED));
-        TERRACOTTA_DYES.put("orange", new TerracottaDye(Tags.Items.DYES_ORANGE));
-        TERRACOTTA_DYES.put("yellow", new TerracottaDye(Tags.Items.DYES_YELLOW));
-        TERRACOTTA_DYES.put("lime", new TerracottaDye(Tags.Items.DYES_LIME));
-        TERRACOTTA_DYES.put("green", new TerracottaDye(Tags.Items.DYES_GREEN));
-        TERRACOTTA_DYES.put("cyan", new TerracottaDye(Tags.Items.DYES_CYAN));
-        TERRACOTTA_DYES.put("light_blue", new TerracottaDye(Tags.Items.DYES_LIGHT_BLUE));
-        TERRACOTTA_DYES.put("blue", new TerracottaDye(Tags.Items.DYES_BLUE));
-        TERRACOTTA_DYES.put("purple", new TerracottaDye(Tags.Items.DYES_PURPLE));
-        TERRACOTTA_DYES.put("magenta", new TerracottaDye(Tags.Items.DYES_MAGENTA));
-        TERRACOTTA_DYES.put("pink", new TerracottaDye(Tags.Items.DYES_PINK));
+        TERRACOTTA_DYES.put("white", new TerracottaDye(
+                Tags.Items.DYES_WHITE,
+                Tags.Items.DYED_WHITE,
+                Tags.Blocks.DYED_WHITE
+        ));
+        TERRACOTTA_DYES.put("light_gray", new TerracottaDye(
+                Tags.Items.DYES_LIGHT_GRAY,
+                Tags.Items.DYED_LIGHT_GRAY,
+                Tags.Blocks.DYED_LIGHT_GRAY
+        ));
+        TERRACOTTA_DYES.put("gray", new TerracottaDye(
+                Tags.Items.DYES_GRAY,
+                Tags.Items.DYED_GRAY,
+                Tags.Blocks.DYED_GRAY
+        ));
+        TERRACOTTA_DYES.put("black", new TerracottaDye(
+                Tags.Items.DYES_BLACK,
+                Tags.Items.DYED_BLACK,
+                Tags.Blocks.DYED_BLACK
+        ));
+        TERRACOTTA_DYES.put("brown", new TerracottaDye(
+                Tags.Items.DYES_BROWN,
+                Tags.Items.DYED_BROWN,
+                Tags.Blocks.DYED_BROWN
+        ));
+        TERRACOTTA_DYES.put("red", new TerracottaDye(
+                Tags.Items.DYES_RED,
+                Tags.Items.DYED_RED,
+                Tags.Blocks.DYED_RED
+        ));
+        TERRACOTTA_DYES.put("orange", new TerracottaDye(
+                Tags.Items.DYES_ORANGE,
+                Tags.Items.DYED_ORANGE,
+                Tags.Blocks.DYED_ORANGE
+        ));
+        TERRACOTTA_DYES.put("yellow", new TerracottaDye(
+                Tags.Items.DYES_YELLOW,
+                Tags.Items.DYED_YELLOW,
+                Tags.Blocks.DYED_YELLOW
+        ));
+        TERRACOTTA_DYES.put("lime", new TerracottaDye(
+                Tags.Items.DYES_LIME,
+                Tags.Items.DYED_LIME,
+                Tags.Blocks.DYED_LIME
+        ));
+        TERRACOTTA_DYES.put("green", new TerracottaDye(
+                Tags.Items.DYES_GREEN,
+                Tags.Items.DYED_GREEN,
+                Tags.Blocks.DYED_GREEN
+        ));
+        TERRACOTTA_DYES.put("cyan", new TerracottaDye(
+                Tags.Items.DYES_CYAN,
+                Tags.Items.DYED_CYAN,
+                Tags.Blocks.DYED_CYAN
+        ));
+        TERRACOTTA_DYES.put("light_blue", new TerracottaDye(
+                Tags.Items.DYES_LIGHT_BLUE,
+                Tags.Items.DYED_LIGHT_BLUE,
+                Tags.Blocks.DYED_LIGHT_BLUE
+        ));
+        TERRACOTTA_DYES.put("blue", new TerracottaDye(
+                Tags.Items.DYES_BLUE,
+                Tags.Items.DYED_BLUE,
+                Tags.Blocks.DYED_BLUE
+        ));
+        TERRACOTTA_DYES.put("purple", new TerracottaDye(
+                Tags.Items.DYES_PURPLE,
+                Tags.Items.DYED_PURPLE,
+                Tags.Blocks.DYED_PURPLE
+        ));
+        TERRACOTTA_DYES.put("magenta", new TerracottaDye(
+                Tags.Items.DYES_MAGENTA,
+                Tags.Items.DYED_MAGENTA,
+                Tags.Blocks.DYED_MAGENTA
+        ));
+        TERRACOTTA_DYES.put("pink", new TerracottaDye(
+                Tags.Items.DYES_PINK,
+                Tags.Items.DYED_PINK,
+                Tags.Blocks.DYED_PINK
+        ));
 
         TERRACOTTA_PATTERNS.put("sun", new TerracottaPattern(SSItemTags.Pattern.SUN, SSBlockTags.Pattern.SUN));
         TERRACOTTA_PATTERNS.put("modern", new TerracottaPattern(SSItemTags.Pattern.MODERN, SSBlockTags.Pattern.MODERN));
