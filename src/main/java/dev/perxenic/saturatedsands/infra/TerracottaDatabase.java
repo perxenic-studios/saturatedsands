@@ -16,19 +16,26 @@ public class TerracottaDatabase {
     public static final HashMap<String, TerracottaPattern> TERRACOTTA_PATTERNS = new HashMap<>();
 
     public static void addEntry(TerracottaEntry entry) {
-        TERRACOTTA_ENTRIES.put(entry.block().getId(), entry);
+
+        if (TERRACOTTA_ENTRIES.containsKey(entry.block().getId())) {
+            SaturatedSands.LOGGER.error("Terracotta entry already exists: {}", entry.block().getId());
+        }
 
         if (!TERRACOTTA_DYES.containsKey(entry.color())) {
-            SaturatedSands.LOGGER.info("Invalid terracotta color: {}", entry.color());
-        } else {
-            TERRACOTTA_DYES.get(entry.color()).entryList.add(entry);
+            SaturatedSands.LOGGER.error("Invalid terracotta color: {}", entry.color());
+            return;
         }
 
         if (!TERRACOTTA_PATTERNS.containsKey(entry.pattern())) {
-            SaturatedSands.LOGGER.info("Invalid terracotta pattern: {}", entry.pattern());
-        } else {
-            TERRACOTTA_PATTERNS.get(entry.pattern()).entryList.add(entry);
+            SaturatedSands.LOGGER.error("Invalid terracotta pattern: {}", entry.pattern());
+            return;
         }
+
+        TERRACOTTA_ENTRIES.put(entry.block().getId(), entry);
+
+        TERRACOTTA_DYES.get(entry.color()).entryList.add(entry);
+
+        TERRACOTTA_PATTERNS.get(entry.pattern()).entryList.add(entry);
     }
 
     static {
