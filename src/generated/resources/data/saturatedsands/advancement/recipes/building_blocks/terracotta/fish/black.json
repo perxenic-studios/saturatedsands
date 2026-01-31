@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_faded_fish": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mirage:orange_faded_terracotta"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "saturatedsands:terracotta/fish/black"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_faded_fish"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "saturatedsands:terracotta/fish/black"
+    ]
+  }
+}

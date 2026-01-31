@@ -22,7 +22,7 @@ public class SSBlockStateProvider extends BlockStateProvider {
         //TODO: Uncomment when textures added
         /*
         TerracottaDatabase.TERRACOTTA_ENTRIES.forEach(((location, entry) ->
-                terracotta(entry.block().get(), "terracotta/" + entry.pattern() + "/" + entry.color())
+                terracotta(entry.block().get(), entry.getPath())
         ));
          */
     }

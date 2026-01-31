@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_faded_cross": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mirage:gray_faded_terracotta"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "saturatedsands:terracotta/cross/lime"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_faded_cross"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "saturatedsands:terracotta/cross/lime"
+    ]
+  }
+}

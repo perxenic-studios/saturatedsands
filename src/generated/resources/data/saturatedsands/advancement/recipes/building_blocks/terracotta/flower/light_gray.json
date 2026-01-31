@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_faded_flower": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mirage:yellow_faded_terracotta"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "saturatedsands:terracotta/flower/light_gray"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_faded_flower"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "saturatedsands:terracotta/flower/light_gray"
+    ]
+  }
+}

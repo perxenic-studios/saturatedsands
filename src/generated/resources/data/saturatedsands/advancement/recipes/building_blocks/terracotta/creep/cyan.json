@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_faded_creep": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mirage:cyan_faded_terracotta"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "saturatedsands:terracotta/creep/cyan"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_faded_creep"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "saturatedsands:terracotta/creep/cyan"
+    ]
+  }
+}

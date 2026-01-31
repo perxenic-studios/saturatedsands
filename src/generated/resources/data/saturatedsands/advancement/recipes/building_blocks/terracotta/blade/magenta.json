@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_faded_blade": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mirage:purple_faded_terracotta"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "saturatedsands:terracotta/blade/magenta"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_faded_blade"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "saturatedsands:terracotta/blade/magenta"
+    ]
+  }
+}

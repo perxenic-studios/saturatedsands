@@ -26,4 +26,8 @@ public record TerracottaEntry(String pattern, String color, DeferredBlock<Glazed
     public TagKey<Item> itemTagForDye() {
         return getTerracottaDye().itemTag;
     }
+
+    public String getPath() {
+        return "terracotta/" + pattern() + "/" + color();
+    }
 }
