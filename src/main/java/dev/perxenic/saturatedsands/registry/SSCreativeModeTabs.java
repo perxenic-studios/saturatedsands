@@ -10,6 +10,8 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import static dev.perxenic.saturatedsands.SaturatedSands.MODID;
 import static dev.perxenic.saturatedsands.SaturatedSands.ssLoc;
+import static dev.perxenic.saturatedsands.infra.TerracottaDatabase.*;
+import static dev.perxenic.saturatedsands.registry.SSTerracotta.terracottaName;
 
 public class SSCreativeModeTabs {
     public static DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -20,9 +22,13 @@ public class SSCreativeModeTabs {
                     .title(Component.translatable("itemGroup.%s.terracotta".formatted(MODID)))
                     .icon(() -> TerracottaDatabase.TERRACOTTA_ENTRIES.get(ssLoc("red_geo_terracotta")).block().toStack())
                     .displayItems(((itemDisplayParameters, output) -> {
-                        TerracottaDatabase.TERRACOTTA_ENTRIES.forEach((location, entry) -> {
-                            output.accept(entry.block().asItem());
-                        });
+                        for (String pattern: SS_PATTERNS) {
+                            output.accept(TERRACOTTA_PATTERNS.get(pattern).fadedBlock.toStack());
+                            for (String color : VANILLA_DYES) {
+                                output.accept(TERRACOTTA_ENTRIES.get(ssLoc(terracottaName(color, pattern)))
+                                        .block().toStack());
+                            }
+                        }
                     }))
                     .build());
 

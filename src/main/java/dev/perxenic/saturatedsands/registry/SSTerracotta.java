@@ -19,11 +19,11 @@ public class SSTerracotta {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MODID);
 
     public static void register(IEventBus eventBus) {
-        VANILLA_DYES.forEach(dye -> {
-            SS_PATTERNS.forEach(pattern -> {
+        for (String pattern : SS_PATTERNS) {
+            for (String dye : VANILLA_DYES) {
                 registerTerracotta(BLOCKS, ITEMS, pattern, dye);
-            });
-        });
+            }
+        }
 
         ITEMS.register(eventBus);
         BLOCKS.register(eventBus);
@@ -35,7 +35,7 @@ public class SSTerracotta {
             String pattern,
             String color
     ) {
-        DeferredBlock<GlazedTerracottaBlock> block = blockRegister.register("%s_%s_terracotta".formatted(color, pattern),
+        DeferredBlock<GlazedTerracottaBlock> block = blockRegister.register(terracottaName(color, pattern),
                 () -> new GlazedTerracottaBlock(BlockBehaviour.Properties.of()
                         .mapColor(TerracottaDatabase.TERRACOTTA_DYES.get(color).mapColor)
                         .instrument(NoteBlockInstrument.BASEDRUM)
@@ -51,5 +51,9 @@ public class SSTerracotta {
                 color,
                 block
         ));
+    }
+
+    public static String terracottaName(String color, String pattern) {
+        return "%s_%s_terracotta".formatted(color, pattern);
     }
 }
