@@ -13,6 +13,6 @@ public class SSItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-
+        //TODO: Add when block state provider is added
     }
 }

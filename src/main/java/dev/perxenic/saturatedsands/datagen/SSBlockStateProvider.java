@@ -1,5 +1,6 @@
 package dev.perxenic.saturatedsands.datagen;
 
+import dev.perxenic.saturatedsands.infra.TerracottaDatabase;
 import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
@@ -18,7 +19,12 @@ public class SSBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-
+        //TODO: Uncomment when textures added
+        /*
+        TerracottaDatabase.TERRACOTTA_ENTRIES.forEach(((location, entry) ->
+                terracotta(entry.block().get(), "terracotta/" + entry.pattern() + "/" + entry.color())
+        ));
+         */
     }
 
     public void terracotta(Block block, String name) {
