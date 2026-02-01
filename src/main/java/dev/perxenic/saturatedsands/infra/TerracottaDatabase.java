@@ -1,7 +1,7 @@
 package dev.perxenic.saturatedsands.infra;
 
 import com.google.common.collect.ImmutableList;
-import dev.perxenic.mirage.registry.ModBlocks;
+import dev.perxenic.mirage.registry.MirageBlocks;
 import dev.perxenic.saturatedsands.SaturatedSands;
 import dev.perxenic.saturatedsands.content.SSBlockTags;
 import dev.perxenic.saturatedsands.content.SSItemTags;
@@ -179,82 +179,82 @@ public class TerracottaDatabase {
         TERRACOTTA_PATTERNS.put("sun", new TerracottaPattern(
                 SSItemTags.Pattern.SUN,
                 SSBlockTags.Pattern.SUN,
-                ModBlocks.WHITE_FADED_TERRACOTTA
+                MirageBlocks.FADED_SUN_TERRACOTTA
         ));
         TERRACOTTA_PATTERNS.put("modern", new TerracottaPattern(
                 SSItemTags.Pattern.MODERN,
                 SSBlockTags.Pattern.MODERN,
-                ModBlocks.LIGHT_GRAY_FADED_TERRACOTTA
+                MirageBlocks.FADED_MODERN_TERRACOTTA
         ));
         TERRACOTTA_PATTERNS.put("cross", new TerracottaPattern(
                         SSItemTags.Pattern.CROSS,
                         SSBlockTags.Pattern.CROSS,
-                        ModBlocks.GRAY_FADED_TERRACOTTA
+                MirageBlocks.FADED_CROSS_TERRACOTTA
         ));
         TERRACOTTA_PATTERNS.put("crawl", new TerracottaPattern(
                 SSItemTags.Pattern.CRAWL,
                 SSBlockTags.Pattern.CRAWL,
-                ModBlocks.BLACK_FADED_TERRACOTTA
+                MirageBlocks.FADED_CRAWL_TERRACOTTA
         ));
         TERRACOTTA_PATTERNS.put("target", new TerracottaPattern(
                 SSItemTags.Pattern.TARGET,
                 SSBlockTags.Pattern.TARGET,
-                ModBlocks.BROWN_FADED_TERRACOTTA
+                MirageBlocks.FADED_TARGET_TERRACOTTA
         ));
         TERRACOTTA_PATTERNS.put("potion", new TerracottaPattern(
                 SSItemTags.Pattern.POTION,
                 SSBlockTags.Pattern.POTION,
-                ModBlocks.RED_FADED_TERRACOTTA
+                MirageBlocks.FADED_POTION_TERRACOTTA
         ));
         TERRACOTTA_PATTERNS.put("fish", new TerracottaPattern(
                 SSItemTags.Pattern.FISH,
                 SSBlockTags.Pattern.FISH,
-                ModBlocks.ORANGE_FADED_TERRACOTTA
+                MirageBlocks.FADED_FISH_TERRACOTTA
         ));
         TERRACOTTA_PATTERNS.put("flower", new TerracottaPattern(
                 SSItemTags.Pattern.FLOWER,
                 SSBlockTags.Pattern.FLOWER,
-                ModBlocks.YELLOW_FADED_TERRACOTTA
+                MirageBlocks.FADED_FLOWER_TERRACOTTA
         ));
         TERRACOTTA_PATTERNS.put("spoke", new TerracottaPattern(
                 SSItemTags.Pattern.SPOKE,
                 SSBlockTags.Pattern.SPOKE,
-                ModBlocks.LIME_FADED_TERRACOTTA
+                MirageBlocks.FADED_SPOKE_TERRACOTTA
         ));
         TERRACOTTA_PATTERNS.put("plant", new TerracottaPattern(
                 SSItemTags.Pattern.PLANT,
                 SSBlockTags.Pattern.PLANT,
-                ModBlocks.GREEN_FADED_TERRACOTTA
+                MirageBlocks.FADED_PLANT_TERRACOTTA
         ));
         TERRACOTTA_PATTERNS.put("creep", new TerracottaPattern(
                 SSItemTags.Pattern.CREEP,
                 SSBlockTags.Pattern.CREEP,
-                ModBlocks.CYAN_FADED_TERRACOTTA
+                MirageBlocks.FADED_CREEP_TERRACOTTA
         ));
         TERRACOTTA_PATTERNS.put("geo", new TerracottaPattern(
                 SSItemTags.Pattern.GEO,
                 SSBlockTags.Pattern.GEO,
-                ModBlocks.LIGHT_BLUE_FADED_TERRACOTTA
+                MirageBlocks.FADED_GEO_TERRACOTTA
         ));
         TERRACOTTA_PATTERNS.put("fan", new TerracottaPattern(
                 SSItemTags.Pattern.FAN,
                 SSBlockTags.Pattern.FAN,
-                ModBlocks.BLUE_FADED_TERRACOTTA
+                MirageBlocks.FADED_FAN_TERRACOTTA
         ));
         TERRACOTTA_PATTERNS.put("blade", new TerracottaPattern(
                 SSItemTags.Pattern.BLADE,
                 SSBlockTags.Pattern.BLADE,
-                ModBlocks.PURPLE_FADED_TERRACOTTA
+                MirageBlocks.FADED_BLADE_TERRACOTTA
         ));
         TERRACOTTA_PATTERNS.put("arrow", new TerracottaPattern(
                 SSItemTags.Pattern.ARROW,
                 SSBlockTags.Pattern.ARROW,
-                ModBlocks.MAGENTA_FADED_TERRACOTTA
+                MirageBlocks.FADED_ARROW_TERRACOTTA
         ));
         TERRACOTTA_PATTERNS.put("leaf", new TerracottaPattern(
                 SSItemTags.Pattern.LEAF,
                 SSBlockTags.Pattern.LEAF,
-                ModBlocks.PINK_FADED_TERRACOTTA
+                MirageBlocks.FADED_LEAF_TERRACOTTA
         ));
     }
 }

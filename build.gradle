@@ -129,7 +129,7 @@ configurations {
 dependencies {
     localRuntime "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
 
-    implementation("maven.modrinth:mirage_deserts:${mirage_version}")
+    implementation("maven.modrinth:mirage_deserts:${minecraft_version}-${mirage_version}")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

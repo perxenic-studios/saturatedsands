@@ -1,8 +1,6 @@
 package dev.perxenic.saturatedsands.datagen;
 
-import dev.perxenic.mirage.registry.ModItems;
 import dev.perxenic.saturatedsands.SaturatedSands;
-import dev.perxenic.saturatedsands.content.SSItemTags;
 import dev.perxenic.saturatedsands.infra.TerracottaDatabase;
 import dev.perxenic.saturatedsands.infra.TerracottaEntry;
 import net.minecraft.core.HolderLookup;
