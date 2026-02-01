@@ -27,7 +27,7 @@ public class SSBlockStateProvider extends BlockStateProvider {
          */
     }
 
-    public void terracotta(Block block, String name) {
+    private void terracotta(Block block, String name) {
         getVariantBuilder(block).forAllStates(state -> {
             Direction facing = state.getValue(BlockStateProperties.HORIZONTAL_FACING);
 
