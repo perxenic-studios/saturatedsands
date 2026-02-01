@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "saturatedsands:terracotta/modern/cyan",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "saturatedsands:terracotta/modern/cyan",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "saturatedsands:terracotta/modern/cyan"
+    },
+    "facing=west": {
+      "model": "saturatedsands:terracotta/modern/cyan",
+      "y": 90
+    }
+  }
+}

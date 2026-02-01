@@ -19,12 +19,9 @@ public class SSBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        //TODO: Uncomment when textures added
-        /*
         TerracottaDatabase.TERRACOTTA_ENTRIES.forEach(((location, entry) ->
                 terracotta(entry.block().get(), entry.getPath())
         ));
-         */
     }
 
     private void terracotta(Block block, String name) {

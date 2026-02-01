@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "saturatedsands:terracotta/blade/lime",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "saturatedsands:terracotta/blade/lime",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "saturatedsands:terracotta/blade/lime"
+    },
+    "facing=west": {
+      "model": "saturatedsands:terracotta/blade/lime",
+      "y": 90
+    }
+  }
+}

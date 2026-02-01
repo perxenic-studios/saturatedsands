@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "saturatedsands:terracotta/spoke/gray",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "saturatedsands:terracotta/spoke/gray",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "saturatedsands:terracotta/spoke/gray"
+    },
+    "facing=west": {
+      "model": "saturatedsands:terracotta/spoke/gray",
+      "y": 90
+    }
+  }
+}

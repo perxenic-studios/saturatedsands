@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "saturatedsands:terracotta/blade/light_blue",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "saturatedsands:terracotta/blade/light_blue",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "saturatedsands:terracotta/blade/light_blue"
+    },
+    "facing=west": {
+      "model": "saturatedsands:terracotta/blade/light_blue",
+      "y": 90
+    }
+  }
+}

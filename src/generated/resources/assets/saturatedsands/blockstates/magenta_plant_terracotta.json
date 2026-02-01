@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "saturatedsands:terracotta/plant/magenta",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "saturatedsands:terracotta/plant/magenta",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "saturatedsands:terracotta/plant/magenta"
+    },
+    "facing=west": {
+      "model": "saturatedsands:terracotta/plant/magenta",
+      "y": 90
+    }
+  }
+}
