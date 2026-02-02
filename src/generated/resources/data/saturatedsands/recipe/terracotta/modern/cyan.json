@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "mirage:light_gray_faded_terracotta"
+      "item": "mirage:faded_modern_terracotta"
     },
     ".": {
       "tag": "c:dyes/cyan"

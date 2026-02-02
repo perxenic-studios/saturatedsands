@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "mirage:red_faded_terracotta"
+      "item": "mirage:faded_potion_terracotta"
     },
     ".": {
       "tag": "c:dyes/green"

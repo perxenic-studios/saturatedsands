@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "mirage:magenta_faded_terracotta"
+      "item": "mirage:faded_arrow_terracotta"
     },
     ".": {
       "tag": "c:dyes/magenta"

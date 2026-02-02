@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "mirage:cyan_faded_terracotta"
+      "item": "mirage:faded_creep_terracotta"
     },
     ".": {
       "tag": "c:dyes/pink"
