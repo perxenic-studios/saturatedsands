@@ -31,5 +31,6 @@ public class SSDataGenerators {
         generator.addProvider(event.includeServer(), new SSRecipeProvider(packOutput, lookupProvider));
 
         generator.addProvider(event.includeClient(), new SSBlockStateProvider(packOutput, existingFileHelper));
+        generator.addProvider(event.includeClient(), new SSLanguageProvider(packOutput));
     }
 }
