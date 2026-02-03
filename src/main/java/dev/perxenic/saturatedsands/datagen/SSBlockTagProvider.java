@@ -39,6 +39,7 @@ public class SSBlockTagProvider extends BlockTagsProvider {
                 i++;
             }
             tag(dye.dyedBlockTag).add(blocks);
+            tag(dye.dyedTerracottaBlockTag).add(blocks);
         });
     }
 }

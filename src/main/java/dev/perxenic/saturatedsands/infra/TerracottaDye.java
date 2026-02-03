@@ -15,6 +15,9 @@ public class TerracottaDye {
     public final TagKey<Item> itemTag;
     public final TagKey<Item> dyedItemTag;
     public final TagKey<Block> dyedBlockTag;
+    public final TagKey<Item> dyedTerracottaItemTag;
+    public final TagKey<Block> dyedTerracottaBlockTag;
+
 
     public final MapColor mapColor;
 
@@ -31,6 +34,8 @@ public class TerracottaDye {
         this.itemTag = itemTag;
         this.dyedItemTag = dyedItemTag;
         this.dyedBlockTag = dyedBlockTag;
+        this.dyedTerracottaItemTag = dyedTerracottaItemTag;
+        this.dyedTerracottaBlockTag = dyedTerracottaBlockTag;
         this.mapColor = mapColor;
     }
 

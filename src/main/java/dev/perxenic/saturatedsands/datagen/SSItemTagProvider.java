@@ -42,6 +42,7 @@ public class SSItemTagProvider extends ItemTagsProvider {
                 i++;
             }
             tag(dye.dyedItemTag).add(items);
+            tag(dye.dyedTerracottaItemTag).add(items);
         });
 
         tag(Pattern.ALL)
