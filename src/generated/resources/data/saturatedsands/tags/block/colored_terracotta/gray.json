@@ -15,6 +15,7 @@
     "saturatedsands:gray_fan_terracotta",
     "saturatedsands:gray_blade_terracotta",
     "saturatedsands:gray_arrow_terracotta",
-    "saturatedsands:gray_leaf_terracotta"
+    "saturatedsands:gray_leaf_terracotta",
+    "minecraft:gray_terracotta"
   ]
 }

@@ -6,6 +6,7 @@ import dev.perxenic.saturatedsands.infra.TerracottaEntry;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -45,6 +46,24 @@ public class SSBlockTagProvider extends BlockTagsProvider {
             tag(dye.dyedBlockTag).add(blocks);
             tag(dye.dyedTerracottaBlockTag).add(blocks);
         });
+
+        tag(Color.FADED).add(Blocks.TERRACOTTA);
+        tag(Color.WHITE).add(Blocks.WHITE_TERRACOTTA);
+        tag(Color.LIGHT_GRAY).add(Blocks.LIGHT_GRAY_TERRACOTTA);
+        tag(Color.GRAY).add(Blocks.GRAY_TERRACOTTA);
+        tag(Color.BLACK).add(Blocks.BLACK_TERRACOTTA);
+        tag(Color.BROWN).add(Blocks.BROWN_TERRACOTTA);
+        tag(Color.RED).add(Blocks.RED_TERRACOTTA);
+        tag(Color.ORANGE).add(Blocks.ORANGE_TERRACOTTA);
+        tag(Color.YELLOW).add(Blocks.YELLOW_TERRACOTTA);
+        tag(Color.LIME).add(Blocks.LIME_TERRACOTTA);
+        tag(Color.GREEN).add(Blocks.GREEN_TERRACOTTA);
+        tag(Color.CYAN).add(Blocks.CYAN_TERRACOTTA);
+        tag(Color.LIGHT_BLUE).add(Blocks.LIGHT_BLUE_TERRACOTTA);
+        tag(Color.BLUE).add(Blocks.BLUE_TERRACOTTA);
+        tag(Color.PURPLE).add(Blocks.PURPLE_TERRACOTTA);
+        tag(Color.MAGENTA).add(Blocks.MAGENTA_TERRACOTTA);
+        tag(Color.PINK).add(Blocks.PINK_TERRACOTTA);
 
         tag(Pattern.ALL)
                 .addTag(Pattern.SUN)

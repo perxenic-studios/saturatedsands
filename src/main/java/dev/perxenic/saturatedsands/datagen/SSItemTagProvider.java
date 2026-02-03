@@ -7,6 +7,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;
@@ -46,6 +47,24 @@ public class SSItemTagProvider extends ItemTagsProvider {
             tag(dye.dyedItemTag).add(items);
             tag(dye.dyedTerracottaItemTag).add(items);
         });
+
+        tag(Color.FADED).add(Items.TERRACOTTA);
+        tag(Color.WHITE).add(Items.WHITE_TERRACOTTA);
+        tag(Color.LIGHT_GRAY).add(Items.LIGHT_GRAY_TERRACOTTA);
+        tag(Color.GRAY).add(Items.GRAY_TERRACOTTA);
+        tag(Color.BLACK).add(Items.BLACK_TERRACOTTA);
+        tag(Color.BROWN).add(Items.BROWN_TERRACOTTA);
+        tag(Color.RED).add(Items.RED_TERRACOTTA);
+        tag(Color.ORANGE).add(Items.ORANGE_TERRACOTTA);
+        tag(Color.YELLOW).add(Items.YELLOW_TERRACOTTA);
+        tag(Color.LIME).add(Items.LIME_TERRACOTTA);
+        tag(Color.GREEN).add(Items.GREEN_TERRACOTTA);
+        tag(Color.CYAN).add(Items.CYAN_TERRACOTTA);
+        tag(Color.LIGHT_BLUE).add(Items.LIGHT_BLUE_TERRACOTTA);
+        tag(Color.BLUE).add(Items.BLUE_TERRACOTTA);
+        tag(Color.PURPLE).add(Items.PURPLE_TERRACOTTA);
+        tag(Color.MAGENTA).add(Items.MAGENTA_TERRACOTTA);
+        tag(Color.PINK).add(Items.PINK_TERRACOTTA);
 
         tag(Pattern.ALL)
                 .addTag(Pattern.SUN)

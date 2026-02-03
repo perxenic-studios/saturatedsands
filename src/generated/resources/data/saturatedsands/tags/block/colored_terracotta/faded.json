@@ -15,6 +15,7 @@
     "mirage:faded_fan_terracotta",
     "mirage:faded_modern_terracotta",
     "mirage:faded_fish_terracotta",
-    "mirage:faded_plant_terracotta"
+    "mirage:faded_plant_terracotta",
+    "minecraft:terracotta"
   ]
 }
