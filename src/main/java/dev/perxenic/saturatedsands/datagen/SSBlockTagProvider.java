@@ -63,5 +63,24 @@ public class SSBlockTagProvider extends BlockTagsProvider {
                 .addTag(Pattern.BLADE)
                 .addTag(Pattern.ARROW)
                 .addTag(Pattern.LEAF);
+
+        tag(Color.ALL)
+                .addTag(Color.FADED)
+                .addTag(Color.WHITE)
+                .addTag(Color.LIGHT_GRAY)
+                .addTag(Color.GRAY)
+                .addTag(Color.BLACK)
+                .addTag(Color.BROWN)
+                .addTag(Color.RED)
+                .addTag(Color.ORANGE)
+                .addTag(Color.YELLOW)
+                .addTag(Color.LIME)
+                .addTag(Color.GREEN)
+                .addTag(Color.CYAN)
+                .addTag(Color.LIGHT_BLUE)
+                .addTag(Color.BLUE)
+                .addTag(Color.PURPLE)
+                .addTag(Color.MAGENTA)
+                .addTag(Color.PINK);
     }
 }

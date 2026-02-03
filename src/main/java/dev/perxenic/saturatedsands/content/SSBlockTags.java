@@ -32,7 +32,7 @@ public class SSBlockTags {
     }
 
     public static class Color {
-        public final static TagKey<Block> COLORED_TERRACOTTA = BlockTags.create(ssLoc("colored_terracotta"));
+        public final static TagKey<Block> ALL = BlockTags.create(ssLoc("colored_terracotta"));
         public final static TagKey<Block> FADED = BlockTags.create(coloredLoc("faded"));
 
         public final static TagKey<Block> WHITE = BlockTags.create(coloredLoc("white"));
