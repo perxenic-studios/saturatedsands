@@ -1,4 +1,10 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "saturatedsands:config",
+      "config_key": "coloredTerracottaStonecutting"
+    }
+  ],
   "parent": "minecraft:recipes/root",
   "criteria": {
     "has_purple_terracotta": {

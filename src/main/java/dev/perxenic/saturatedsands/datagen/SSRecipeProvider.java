@@ -44,7 +44,10 @@ public class SSRecipeProvider extends RecipeProvider implements IConditionBuilde
                             RecipeCategory.BUILDING_BLOCKS,
                             entry.block().asItem()
                     ).unlockedBy("has_"+entry.color()+"_terracotta", has(entry.getTerracottaDye().dyedTerracottaItemTag))
-                    .save(recipeOutput, ssLoc(entry.getPath()+"_stonecutting"));
+                    .save(
+                            outputWithConfig(recipeOutput, "coloredTerracottaStonecutting"),
+                            ssLoc(entry.getPath()+"_stonecutting")
+                    );
         }));
 
         TerracottaDatabase.TERRACOTTA_PATTERNS.forEach((name, pattern) -> {
