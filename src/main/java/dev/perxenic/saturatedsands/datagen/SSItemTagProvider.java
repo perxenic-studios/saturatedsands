@@ -14,6 +14,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
+import static dev.perxenic.saturatedsands.content.SSItemTags.Color;
 import static dev.perxenic.saturatedsands.content.SSItemTags.Pattern;
 
 public class SSItemTagProvider extends ItemTagsProvider {
@@ -32,6 +33,7 @@ public class SSItemTagProvider extends ItemTagsProvider {
                 i++;
             }
             tag(pattern.itemTag).add(items).add(pattern.fadedBlock.asItem());
+            tag(Color.FADED).add(pattern.fadedBlock.asItem());
         });
 
         TerracottaDatabase.TERRACOTTA_DYES.forEach((name, dye) -> {
