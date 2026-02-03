@@ -23,9 +23,9 @@ public class SSLanguageProvider extends LanguageProvider {
         add("saturatedsands.configuration.section.saturatedsands.common.toml", "Saturated Sands Configs");
         add("saturatedsands.configuration.section.saturatedsands.common.toml.title", "Saturated Sands Configs");
 
-        add("saturatedsands.configuration.fadedTerracottaDyeing", "Faded Terracotta Dyeing");
-        add("saturatedsands.configuration.fadedTerracottaStonecutting", "Faded Terracotta Stonecutting");
-        add("saturatedsands.configuration.fadedReverseStonecutting", "Faded Reverse Stonecutting");
+        addConfig("fadedTerracottaDyeing");
+        addConfig("fadedTerracottaStonecutting");
+        addConfig("fadedReverseStonecutting");
 
         TerracottaDatabase.TERRACOTTA_ENTRIES.forEach(((location, entry) -> {
             addBlock(
@@ -59,5 +59,24 @@ public class SSLanguageProvider extends LanguageProvider {
 
     public String snakeToTitle(String input) {
         return Arrays.stream(input.split("_")).map(this::capitaliseStart).collect(Collectors.joining(" "));
+    }
+
+    public String camelToTitle(String input) {
+        StringBuilder outputString = new StringBuilder();
+        for (char letter : input.toCharArray()) {
+            if (Character.isUpperCase(letter)) {
+                outputString.append(' ');
+            }
+            outputString.append(letter);
+        }
+        return capitaliseStart(outputString.toString());
+    }
+
+    public void addConfig(String configName, String translation) {
+        add("saturatedsands.configuration."+configName, translation);
+    }
+
+    public void addConfig(String configName) {
+        addConfig(configName, camelToTitle(configName));
     }
 }
