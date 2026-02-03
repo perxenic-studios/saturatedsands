@@ -5,6 +5,7 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
 import static dev.perxenic.saturatedsands.SaturatedSands.ssLoc;
+import static dev.perxenic.saturatedsands.infra.TerracottaDye.coloredLoc;
 import static dev.perxenic.saturatedsands.infra.TerracottaPattern.patternedLoc;
 
 public class SSItemTags {
@@ -28,5 +29,27 @@ public class SSItemTags {
         public final static TagKey<Item> BLADE = ItemTags.create(patternedLoc("blade")); // Purple
         public final static TagKey<Item> ARROW = ItemTags.create(patternedLoc("arrow")); // Magenta
         public final static TagKey<Item> LEAF = ItemTags.create(patternedLoc("leaf")); // Pink
+    }
+
+    public static class Color {
+        public final static TagKey<Item> ALL = ItemTags.create(ssLoc("colored_terracotta"));
+        public final static TagKey<Item> FADED = ItemTags.create(coloredLoc("faded"));
+
+        public final static TagKey<Item> WHITE = ItemTags.create(coloredLoc("white"));
+        public final static TagKey<Item> LIGHT_GRAY = ItemTags.create(coloredLoc("light_gray"));
+        public final static TagKey<Item> GRAY = ItemTags.create(coloredLoc("gray"));
+        public final static TagKey<Item> BLACK = ItemTags.create(coloredLoc("black"));
+        public final static TagKey<Item> BROWN = ItemTags.create(coloredLoc("brown"));
+        public final static TagKey<Item> RED = ItemTags.create(coloredLoc("red"));
+        public final static TagKey<Item> ORANGE = ItemTags.create(coloredLoc("orange"));
+        public final static TagKey<Item> YELLOW = ItemTags.create(coloredLoc("yellow"));
+        public final static TagKey<Item> LIME = ItemTags.create(coloredLoc("lime"));
+        public final static TagKey<Item> GREEN = ItemTags.create(coloredLoc("green"));
+        public final static TagKey<Item> CYAN = ItemTags.create(coloredLoc("cyan"));
+        public final static TagKey<Item> LIGHT_BLUE = ItemTags.create(coloredLoc("light_blue"));
+        public final static TagKey<Item> BLUE = ItemTags.create(coloredLoc("blue"));
+        public final static TagKey<Item> PURPLE = ItemTags.create(coloredLoc("purple"));
+        public final static TagKey<Item> MAGENTA = ItemTags.create(coloredLoc("magenta"));
+        public final static TagKey<Item> PINK = ItemTags.create(coloredLoc("pink"));
     }
 }
