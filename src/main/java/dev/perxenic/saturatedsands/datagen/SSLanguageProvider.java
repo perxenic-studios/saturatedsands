@@ -40,6 +40,9 @@ public class SSLanguageProvider extends LanguageProvider {
             addTag(() -> pattern.blockTag, snakeToTitle(name) + " Terracotta");
         });
 
+        addTag(() -> SSItemTags.Color.FADED, "Uncolored Terracotta");
+        addTag(() -> SSBlockTags.Color.FADED, "Uncolored Terracotta");
+
         addTag(() -> SSItemTags.Pattern.ALL, "Patterned Terracotta");
         addTag(() -> SSBlockTags.Pattern.ALL, "Patterned Terracotta");
         addTag(() -> SSItemTags.Color.ALL, "All Terracotta Palettes");
