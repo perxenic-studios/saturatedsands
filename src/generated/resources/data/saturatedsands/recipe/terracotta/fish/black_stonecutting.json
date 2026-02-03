@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "saturatedsands:colored_terracotta/black"
+  },
+  "result": {
+    "count": 1,
+    "id": "saturatedsands:black_fish_terracotta"
+  }
+}

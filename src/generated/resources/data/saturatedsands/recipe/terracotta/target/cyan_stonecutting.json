@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "saturatedsands:colored_terracotta/cyan"
+  },
+  "result": {
+    "count": 1,
+    "id": "saturatedsands:cyan_target_terracotta"
+  }
+}

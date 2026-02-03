@@ -5,6 +5,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 import org.jetbrains.annotations.NotNull;
 
@@ -29,6 +30,13 @@ public class SSRecipeProvider extends RecipeProvider implements IConditionBuilde
                     .define('.', entry.itemTagForDye())
                     .unlockedBy("has_faded_"+entry.pattern(), has(fadedItem))
                     .save(recipeOutput, ssLoc(entry.getPath()));
+
+            SingleItemRecipeBuilder.stonecutting(
+                            Ingredient.of(entry.getTerracottaDye().dyedTerracottaItemTag),
+                            RecipeCategory.BUILDING_BLOCKS,
+                            entry.block().asItem()
+                    ).unlockedBy("has_"+entry.color()+"_terracotta", has(entry.getTerracottaDye().dyedTerracottaItemTag))
+                    .save(recipeOutput, ssLoc(entry.getPath()+"_stonecutting"));
         }));
     }
 }

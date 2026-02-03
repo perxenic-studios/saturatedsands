@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "saturatedsands:colored_terracotta/light_blue"
+  },
+  "result": {
+    "count": 1,
+    "id": "saturatedsands:light_blue_modern_terracotta"
+  }
+}

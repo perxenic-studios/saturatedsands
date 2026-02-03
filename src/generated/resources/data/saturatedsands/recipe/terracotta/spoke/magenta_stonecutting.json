@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "saturatedsands:colored_terracotta/magenta"
+  },
+  "result": {
+    "count": 1,
+    "id": "saturatedsands:magenta_spoke_terracotta"
+  }
+}
