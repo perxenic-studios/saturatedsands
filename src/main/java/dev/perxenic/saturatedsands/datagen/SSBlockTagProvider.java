@@ -12,6 +12,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
+import static dev.perxenic.saturatedsands.content.SSBlockTags.Pattern;
+
 public class SSBlockTagProvider extends BlockTagsProvider {
     public SSBlockTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider,
                                @Nullable ExistingFileHelper existingFileHelper) {
@@ -41,5 +43,23 @@ public class SSBlockTagProvider extends BlockTagsProvider {
             tag(dye.dyedBlockTag).add(blocks);
             tag(dye.dyedTerracottaBlockTag).add(blocks);
         });
+
+        tag(Pattern.ALL)
+                .addTag(Pattern.SUN)
+                .addTag(Pattern.MODERN)
+                .addTag(Pattern.CROSS)
+                .addTag(Pattern.CRAWL)
+                .addTag(Pattern.TARGET)
+                .addTag(Pattern.POTION)
+                .addTag(Pattern.FISH)
+                .addTag(Pattern.FLOWER)
+                .addTag(Pattern.SPOKE)
+                .addTag(Pattern.PLANT)
+                .addTag(Pattern.CREEP)
+                .addTag(Pattern.GEO)
+                .addTag(Pattern.FAN)
+                .addTag(Pattern.BLADE)
+                .addTag(Pattern.ARROW)
+                .addTag(Pattern.LEAF);
     }
 }
