@@ -73,7 +73,7 @@ public class SSRecipeProvider extends RecipeProvider implements IConditionBuilde
                 RecipeCategory.BUILDING_BLOCKS,
                 Items.TERRACOTTA
         ).unlockedBy("has_faded_terracotta", has(SSItemTags.Color.FADED))
-                .save(recipeOutput, ssLoc("basic_terracotta_stonecutting"));
+                .save(outputWithConfig(recipeOutput, "fadedReverseStonecutting"), ssLoc("basic_terracotta_stonecutting"));
     }
 
     private RecipeOutput outputWithConfig(RecipeOutput recipeOutput, String configName) {

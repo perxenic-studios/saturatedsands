@@ -19,10 +19,15 @@ public class Config {
             .comment("Whether to add stonecutting recipes for faded terracotta")
             .define("fadedTerracottaStonecutting", true);
 
+    public static final ModConfigSpec.BooleanValue FADED_REVERSE_STONECUTTING = BUILDER
+            .comment("Whether to add recipes for crafting terracotta from faded terracotta in a stonecutter")
+            .define("fadedReverseStonecutting", true);
+
     static final ModConfigSpec SPEC = BUILDER.build();
 
     public static boolean fadedTerracottaDyeing;
     public static boolean fadedTerracottaStonecutting;
+    public static boolean fadedReverseStonecutting;
 
     public static final HashMap<String, Boolean> configDict = new HashMap<>();
 
@@ -33,5 +38,8 @@ public class Config {
 
         fadedTerracottaStonecutting = FADED_TERRACOTTA_STONECUTTING.get();
         configDict.put("fadedTerracottaStonecutting", fadedTerracottaStonecutting);
+
+        fadedReverseStonecutting = FADED_REVERSE_STONECUTTING.get();
+        configDict.put("fadedReverseStonecutting", fadedReverseStonecutting);
     }
 }
