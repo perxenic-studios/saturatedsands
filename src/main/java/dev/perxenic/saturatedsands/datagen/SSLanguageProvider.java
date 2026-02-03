@@ -23,6 +23,8 @@ public class SSLanguageProvider extends LanguageProvider {
         add("saturatedsands.configuration.section.saturatedsands.common.toml", "Saturated Sands Configs");
         add("saturatedsands.configuration.section.saturatedsands.common.toml.title", "Saturated Sands Configs");
 
+        add("saturatedsands.configuration.fadedTerracottaDyeing", "Faded Terracotta Dyeing");
+
         TerracottaDatabase.TERRACOTTA_ENTRIES.forEach(((location, entry) -> {
             addBlock(
                     entry.block(),

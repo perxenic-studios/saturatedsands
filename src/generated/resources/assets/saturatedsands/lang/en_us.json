@@ -256,6 +256,7 @@
   "block.saturatedsands.yellow_sun_terracotta": "Yellow Sun Terracotta",
   "block.saturatedsands.yellow_target_terracotta": "Yellow Target Terracotta",
   "itemGroup.saturatedsands.terracotta": "Patterned Terracotta",
+  "saturatedsands.configuration.fadedTerracottaDyeing": "Faded Terracotta Dyeing",
   "saturatedsands.configuration.section.saturatedsands.common.toml": "Saturated Sands Configs",
   "saturatedsands.configuration.section.saturatedsands.common.toml.title": "Saturated Sands Configs",
   "saturatedsands.configuration.title": "Saturated Sands Configs",
