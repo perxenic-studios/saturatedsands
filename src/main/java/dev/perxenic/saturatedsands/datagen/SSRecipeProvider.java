@@ -1,10 +1,12 @@
 package dev.perxenic.saturatedsands.datagen;
 
+import dev.perxenic.saturatedsands.content.SSItemTags;
 import dev.perxenic.saturatedsands.infra.TerracottaDatabase;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 import org.jetbrains.annotations.NotNull;
@@ -32,11 +34,27 @@ public class SSRecipeProvider extends RecipeProvider implements IConditionBuilde
                     .save(recipeOutput, ssLoc(entry.getPath()));
 
             SingleItemRecipeBuilder.stonecutting(
-                            Ingredient.of(entry.getTerracottaDye().dyedTerracottaItemTag),
+                    Ingredient.of(entry.getTerracottaDye().dyedTerracottaItemTag),
                             RecipeCategory.BUILDING_BLOCKS,
                             entry.block().asItem()
                     ).unlockedBy("has_"+entry.color()+"_terracotta", has(entry.getTerracottaDye().dyedTerracottaItemTag))
                     .save(recipeOutput, ssLoc(entry.getPath()+"_stonecutting"));
         }));
+
+        TerracottaDatabase.TERRACOTTA_PATTERNS.forEach((name, pattern) -> {
+            SingleItemRecipeBuilder.stonecutting(
+                    Ingredient.of(SSItemTags.Color.FADED),
+                    RecipeCategory.BUILDING_BLOCKS,
+                    pattern.fadedBlock
+            ).unlockedBy("has_faded_terracotta", has(SSItemTags.Color.FADED))
+                    .save(recipeOutput, ssLoc("terracotta/"+name+"/faded_stonecutting"));
+        });
+
+        SingleItemRecipeBuilder.stonecutting(
+                Ingredient.of(SSItemTags.Color.FADED),
+                RecipeCategory.BUILDING_BLOCKS,
+                Items.TERRACOTTA
+        ).unlockedBy("has_faded_terracotta", has(SSItemTags.Color.FADED))
+                .save(recipeOutput, ssLoc("basic_terracotta_stonecutting"));
     }
 }

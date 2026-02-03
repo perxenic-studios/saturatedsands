@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "saturatedsands:colored_terracotta/faded"
+  },
+  "result": {
+    "count": 1,
+    "id": "mirage:faded_potion_terracotta"
+  }
+}
