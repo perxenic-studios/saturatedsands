@@ -1,6 +1,8 @@
 package dev.perxenic.saturatedsands.datagen;
 
 import dev.perxenic.saturatedsands.SaturatedSands;
+import dev.perxenic.saturatedsands.content.SSBlockTags;
+import dev.perxenic.saturatedsands.content.SSItemTags;
 import dev.perxenic.saturatedsands.infra.TerracottaDatabase;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.LanguageProvider;
@@ -27,6 +29,21 @@ public class SSLanguageProvider extends LanguageProvider {
                     "%s %s Terracotta".formatted(snakeToTitle(entry.color()), snakeToTitle(entry.pattern()))
             );
         }));
+
+        TerracottaDatabase.TERRACOTTA_DYES.forEach((name, dye) -> {
+            addTag(() -> dye.dyedTerracottaItemTag, snakeToTitle(name) + " Terracotta");
+            addTag(() -> dye.dyedTerracottaBlockTag, snakeToTitle(name) + " Terracotta");
+        });
+
+        TerracottaDatabase.TERRACOTTA_PATTERNS.forEach((name, pattern) -> {
+            addTag(() -> pattern.itemTag, snakeToTitle(name) + " Terracotta");
+            addTag(() -> pattern.blockTag, snakeToTitle(name) + " Terracotta");
+        });
+
+        addTag(() -> SSItemTags.Pattern.ALL, "Patterned Terracotta");
+        addTag(() -> SSBlockTags.Pattern.ALL, "Patterned Terracotta");
+        addTag(() -> SSItemTags.Color.ALL, "All Terracotta Palettes");
+        addTag(() -> SSBlockTags.Color.ALL, "All Terracotta Palettes");
     }
 
     public String capitaliseStart(String input) {
