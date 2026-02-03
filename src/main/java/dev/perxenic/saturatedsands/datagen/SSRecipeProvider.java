@@ -2,6 +2,7 @@ package dev.perxenic.saturatedsands.datagen;
 
 import dev.perxenic.mirage.Mirage;
 import dev.perxenic.saturatedsands.content.SSItemTags;
+import dev.perxenic.saturatedsands.content.conditions.SSConfigCondition;
 import dev.perxenic.saturatedsands.infra.TerracottaDatabase;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -33,7 +34,10 @@ public class SSRecipeProvider extends RecipeProvider implements IConditionBuilde
                     .define('#', entry.getTerracottaPattern().fadedBlock.asItem())
                     .define('.', entry.itemTagForDye())
                     .unlockedBy("has_faded_"+entry.pattern(), has(fadedItem))
-                    .save(recipeOutput, ssLoc(entry.getPath()));
+                    .save(
+                            outputWithConfig(recipeOutput, "fadedTerracottaDyeing"),
+                            ssLoc(entry.getPath())
+                    );
 
             SingleItemRecipeBuilder.stonecutting(
                     Ingredient.of(entry.getTerracottaDye().dyedTerracottaItemTag),
@@ -47,9 +51,12 @@ public class SSRecipeProvider extends RecipeProvider implements IConditionBuilde
             SingleItemRecipeBuilder.stonecutting(
                     Ingredient.of(SSItemTags.Color.FADED),
                     RecipeCategory.BUILDING_BLOCKS,
-                    pattern.fadedBlock
-            ).unlockedBy("has_faded_terracotta", has(SSItemTags.Color.FADED))
-                    .save(recipeOutput, ssLoc("terracotta/"+name+"/faded_stonecutting"));
+                    pattern.fadedBlock)
+                    .unlockedBy("has_faded_terracotta", has(SSItemTags.Color.FADED))
+                    .save(
+                            outputWithConfig(recipeOutput, "fadedTerracottaStonecutting"),
+                            ssLoc("terracotta/"+name+"/faded_stonecutting")
+                    );
         });
 
         TerracottaDatabase.TERRACOTTA_DYES.forEach((name, dye) -> {
@@ -67,5 +74,9 @@ public class SSRecipeProvider extends RecipeProvider implements IConditionBuilde
                 Items.TERRACOTTA
         ).unlockedBy("has_faded_terracotta", has(SSItemTags.Color.FADED))
                 .save(recipeOutput, ssLoc("basic_terracotta_stonecutting"));
+    }
+
+    private RecipeOutput outputWithConfig(RecipeOutput recipeOutput, String configName) {
+        return recipeOutput.withConditions(new SSConfigCondition(configName));
     }
 }

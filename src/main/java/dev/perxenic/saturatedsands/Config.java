@@ -15,9 +15,14 @@ public class Config {
             .comment("Whether to add dyeing recipes for faded terracotta")
             .define("fadedTerracottaDyeing", true);
 
+    public static final ModConfigSpec.BooleanValue FADED_TERRACOTTA_STONECUTTING = BUILDER
+            .comment("Whether to add stonecutting recipes for faded terracotta")
+            .define("fadedTerracottaStonecutting", true);
+
     static final ModConfigSpec SPEC = BUILDER.build();
 
     public static boolean fadedTerracottaDyeing;
+    public static boolean fadedTerracottaStonecutting;
 
     public static final HashMap<String, Boolean> configDict = new HashMap<>();
 
@@ -25,5 +30,8 @@ public class Config {
     static void onLoad(final ModConfigEvent event) {
         fadedTerracottaDyeing = FADED_TERRACOTTA_DYEING.get();
         configDict.put("fadedTerracottaDyeing", fadedTerracottaDyeing);
+
+        fadedTerracottaStonecutting = FADED_TERRACOTTA_STONECUTTING.get();
+        configDict.put("fadedTerracottaStonecutting", fadedTerracottaStonecutting);
     }
 }

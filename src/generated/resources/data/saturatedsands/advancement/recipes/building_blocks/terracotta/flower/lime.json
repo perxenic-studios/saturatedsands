@@ -1,4 +1,10 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "saturatedsands:config",
+      "config_key": "fadedTerracottaDyeing"
+    }
+  ],
   "parent": "minecraft:recipes/root",
   "criteria": {
     "has_faded_flower": {
