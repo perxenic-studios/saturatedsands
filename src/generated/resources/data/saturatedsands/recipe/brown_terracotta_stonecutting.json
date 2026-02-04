@@ -1,4 +1,10 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "saturatedsands:config",
+      "config_key": "coloredReverseStonecutting"
+    }
+  ],
   "type": "minecraft:stonecutting",
   "ingredient": {
     "tag": "saturatedsands:colored_terracotta/brown"

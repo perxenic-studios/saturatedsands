@@ -68,7 +68,10 @@ public class SSRecipeProvider extends RecipeProvider implements IConditionBuilde
                     RecipeCategory.BUILDING_BLOCKS,
                     BuiltInRegistries.ITEM.get(Mirage.mcLoc(name+"_terracotta"))
             ).unlockedBy("has_"+name+"_terracotta", has(dye.dyedTerracottaItemTag))
-                    .save(recipeOutput, ssLoc(name+"_terracotta_stonecutting"));
+                    .save(
+                            outputWithConfig(recipeOutput, "coloredReverseStonecutting"),
+                            ssLoc(name+"_terracotta_stonecutting")
+                    );
         });
 
         SingleItemRecipeBuilder.stonecutting(
@@ -76,7 +79,10 @@ public class SSRecipeProvider extends RecipeProvider implements IConditionBuilde
                 RecipeCategory.BUILDING_BLOCKS,
                 Items.TERRACOTTA
         ).unlockedBy("has_faded_terracotta", has(SSItemTags.Color.FADED))
-                .save(outputWithConfig(recipeOutput, "fadedReverseStonecutting"), ssLoc("basic_terracotta_stonecutting"));
+                .save(
+                        outputWithConfig(recipeOutput, "fadedReverseStonecutting"),
+                        ssLoc("basic_terracotta_stonecutting")
+                );
     }
 
     private RecipeOutput outputWithConfig(RecipeOutput recipeOutput, String configName) {

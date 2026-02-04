@@ -256,6 +256,8 @@
   "block.saturatedsands.yellow_sun_terracotta": "Yellow Sun Terracotta",
   "block.saturatedsands.yellow_target_terracotta": "Yellow Target Terracotta",
   "itemGroup.saturatedsands.terracotta": "Patterned Terracotta",
+  "saturatedsands.configuration.coloredReverseStonecutting": "Colored Reverse Stonecutting",
+  "saturatedsands.configuration.coloredTerracottaStonecutting": "Colored Terracotta Stonecutting",
   "saturatedsands.configuration.fadedReverseStonecutting": "Faded Reverse Stonecutting",
   "saturatedsands.configuration.fadedTerracottaDyeing": "Faded Terracotta Dyeing",
   "saturatedsands.configuration.fadedTerracottaStonecutting": "Faded Terracotta Stonecutting",

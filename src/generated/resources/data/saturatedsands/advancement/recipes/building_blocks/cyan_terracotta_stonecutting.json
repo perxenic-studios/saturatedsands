@@ -1,4 +1,10 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "saturatedsands:config",
+      "config_key": "coloredReverseStonecutting"
+    }
+  ],
   "parent": "minecraft:recipes/root",
   "criteria": {
     "has_cyan_terracotta": {
