@@ -18,6 +18,6 @@ find './pattern' | while read pattern; do
         fi
 
         # Open file with aseprite, apply palette and then save it into the output directory
-        $1 -b "$pattern" --color-mode indexed --palette "$palette" --save-as "generated_tex/$(basename $pattern .png)/$(basename $palette .png).png"
+        $1 -b "$pattern" --color-mode indexed --palette "$palette" --save-as "../src/main/resources/assets/saturatedsands/textures/block/terracotta/$(basename $pattern .png)/$(basename $palette .png).png"
     done
 done
