@@ -1,5 +1,6 @@
 package dev.perxenic.saturatedsands.registry;
 
+import dev.perxenic.saturatedsands.Config;
 import dev.perxenic.saturatedsands.infra.TerracottaDatabase;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -23,7 +24,8 @@ public class SSCreativeModeTabs {
                     .icon(() -> TerracottaDatabase.TERRACOTTA_ENTRIES.get(ssLoc("red_geo_terracotta")).block().toStack())
                     .displayItems(((itemDisplayParameters, output) -> {
                         for (String pattern: SS_PATTERNS) {
-                            output.accept(TERRACOTTA_PATTERNS.get(pattern).fadedBlock.toStack());
+                            if (Config.fadedTerracottaTab)
+                                output.accept(TERRACOTTA_PATTERNS.get(pattern).fadedBlock.toStack());
                             for (String color : VANILLA_DYES) {
                                 output.accept(TERRACOTTA_ENTRIES.get(ssLoc(terracottaName(color, pattern)))
                                         .block().toStack());

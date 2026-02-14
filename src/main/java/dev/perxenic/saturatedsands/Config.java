@@ -31,6 +31,10 @@ public class Config {
             .comment("Whether to add recipes for crafting terracotta from patterned terracotta in a stonecutter")
             .define("coloredReverseStonecutting", true);
 
+    public static final ModConfigSpec.BooleanValue FADED_TERRACOTTA_TAB = BUILDER
+            .comment("Whether to add the faded terracotta from mirage into Saturated Sands' creative tab")
+            .define("fadedTerracottaTab", true);
+
     static final ModConfigSpec SPEC = BUILDER.build();
 
     public static boolean fadedTerracottaDyeing;
@@ -38,6 +42,7 @@ public class Config {
     public static boolean fadedReverseStonecutting;
     public static boolean coloredTerracottaStonecutting;
     public static boolean coloredReverseStonecutting;
+    public static boolean fadedTerracottaTab;
 
     public static final HashMap<String, Boolean> configDict = new HashMap<>();
 
@@ -57,5 +62,8 @@ public class Config {
 
         coloredReverseStonecutting = COLORED_REVERSE_STONECUTTING.get();
         configDict.put("coloredReverseStonecutting", coloredReverseStonecutting);
+
+        fadedTerracottaTab = FADED_TERRACOTTA_TAB.get();
+        configDict.put("fadedTerracottaTab", fadedTerracottaTab);
     }
 }
