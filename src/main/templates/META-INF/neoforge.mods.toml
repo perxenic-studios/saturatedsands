@@ -18,6 +18,7 @@ Adds more colored variations and patterns to the decorative blocks from Mirage!
 '''
 
 [[dependencies.${mod_id}]]
+    modId="neoforge"
     type="required"
     versionRange="[${neo_version},)"
     ordering="NONE"
