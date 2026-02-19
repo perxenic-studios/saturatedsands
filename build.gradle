@@ -91,6 +91,9 @@ configurations {
 
 dependencies {
     localRuntime "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
+    localRuntime "maven.modrinth:dye-depot:2.0.2-neoforge"
+
+    compileOnly "maven.modrinth:dye-depot:2.0.2-neoforge"
 
     implementation("maven.modrinth:mirage_deserts:${minecraft_version}-${mirage_version}")
 }
