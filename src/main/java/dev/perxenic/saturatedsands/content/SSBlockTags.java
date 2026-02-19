@@ -1,7 +1,9 @@
 package dev.perxenic.saturatedsands.content;
 
 import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
 import static dev.perxenic.saturatedsands.SaturatedSands.ssLoc;
@@ -55,5 +57,6 @@ public class SSBlockTags {
 
         // Dye Depot
         public final static TagKey<Block> MAROON = BlockTags.create(coloredLoc("maroon"));
+        public final static TagKey<Block> ROSE = BlockTags.create(coloredLoc("rose"));
     }
 }

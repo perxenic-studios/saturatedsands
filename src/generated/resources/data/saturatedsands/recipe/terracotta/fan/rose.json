@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "saturatedsands:config",
+      "config_key": "fadedTerracottaDyeing"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "mirage:faded_fan_terracotta"
+    },
+    ".": {
+      "tag": "c:dyes/rose"
+    }
+  },
+  "pattern": [
+    "###",
+    "#.#",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "saturatedsands:rose_fan_terracotta"
+  }
+}

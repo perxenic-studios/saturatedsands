@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "saturatedsands:terracotta/potion/rose",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "saturatedsands:terracotta/potion/rose",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "saturatedsands:terracotta/potion/rose"
+    },
+    "facing=west": {
+      "model": "saturatedsands:terracotta/potion/rose",
+      "y": 90
+    }
+  }
+}

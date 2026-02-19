@@ -57,5 +57,6 @@ public class SSItemTags {
 
         // Dye Depot
         public final static TagKey<Item> MAROON = ItemTags.create(coloredLoc("maroon"));
+        public final static TagKey<Item> ROSE = ItemTags.create(coloredLoc("rose"));
     }
 }

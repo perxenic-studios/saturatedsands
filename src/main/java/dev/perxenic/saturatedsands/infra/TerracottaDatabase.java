@@ -207,6 +207,18 @@ public class TerracottaDatabase {
                 DDBlocks.TERRACOTTA.holder(DDDyes.MAROON.get()).orElseThrow()
         ));
 
+        TERRACOTTA_DYES.put("rose", new TerracottaDye(
+                ItemTags.create(cLoc("dyes/rose")),
+                ItemTags.create(cLoc("dyed/rose")),
+                BlockTags.create(cLoc("dyed/rose")),
+                SSItemTags.Color.ROSE,
+                SSBlockTags.Color.ROSE,
+                DDDyes.ROSE.getMapColor(),
+                DDBlocks.TERRACOTTA.holder(DDDyes.ROSE.get()).orElseThrow()
+        ));
+
+        // Vanilla Patterns
+
         TERRACOTTA_PATTERNS.put("sun", new TerracottaPattern(
                 SSItemTags.Pattern.SUN,
                 SSBlockTags.Pattern.SUN,
