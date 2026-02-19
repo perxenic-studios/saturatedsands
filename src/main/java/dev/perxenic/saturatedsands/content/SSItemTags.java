@@ -1,8 +1,10 @@
 package dev.perxenic.saturatedsands.content;
 
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 
 import static dev.perxenic.saturatedsands.SaturatedSands.ssLoc;
 import static dev.perxenic.saturatedsands.infra.TerracottaDye.coloredLoc;
@@ -35,6 +37,7 @@ public class SSItemTags {
         public final static TagKey<Item> ALL = ItemTags.create(ssLoc("colored_terracotta"));
         public final static TagKey<Item> FADED = ItemTags.create(coloredLoc("faded"));
 
+        // Vanilla
         public final static TagKey<Item> WHITE = ItemTags.create(coloredLoc("white"));
         public final static TagKey<Item> LIGHT_GRAY = ItemTags.create(coloredLoc("light_gray"));
         public final static TagKey<Item> GRAY = ItemTags.create(coloredLoc("gray"));
@@ -51,5 +54,8 @@ public class SSItemTags {
         public final static TagKey<Item> PURPLE = ItemTags.create(coloredLoc("purple"));
         public final static TagKey<Item> MAGENTA = ItemTags.create(coloredLoc("magenta"));
         public final static TagKey<Item> PINK = ItemTags.create(coloredLoc("pink"));
+
+        // Dye Depot
+        public final static TagKey<Item> MAROON = ItemTags.create(coloredLoc("maroon"));
     }
 }

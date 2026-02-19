@@ -1,8 +1,10 @@
 package dev.perxenic.saturatedsands.infra;
 
+import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.material.MapColor;
 
@@ -18,8 +20,9 @@ public class TerracottaDye {
     public final TagKey<Item> dyedTerracottaItemTag;
     public final TagKey<Block> dyedTerracottaBlockTag;
 
-
     public final MapColor mapColor;
+
+    public final Holder<? extends ItemLike> terracottaItem;
 
     public final List<TerracottaEntry> entryList = new ArrayList<>();
 
@@ -29,7 +32,8 @@ public class TerracottaDye {
             TagKey<Block> dyedBlockTag,
             TagKey<Item> dyedTerracottaItemTag,
             TagKey<Block> dyedTerracottaBlockTag,
-            MapColor mapColor
+            MapColor mapColor,
+            Holder<? extends ItemLike> terracottaItem
     ) {
         this.itemTag = itemTag;
         this.dyedItemTag = dyedItemTag;
@@ -37,6 +41,7 @@ public class TerracottaDye {
         this.dyedTerracottaItemTag = dyedTerracottaItemTag;
         this.dyedTerracottaBlockTag = dyedTerracottaBlockTag;
         this.mapColor = mapColor;
+        this.terracottaItem = terracottaItem;
     }
 
     public static ResourceLocation coloredLoc(String name) {

@@ -1,5 +1,7 @@
 package dev.perxenic.saturatedsands.datagen;
 
+import com.ninni.dye_depot.registry.DDBlocks;
+import com.ninni.dye_depot.registry.DDDyes;
 import dev.perxenic.saturatedsands.SaturatedSands;
 import dev.perxenic.saturatedsands.infra.TerracottaDatabase;
 import dev.perxenic.saturatedsands.infra.TerracottaEntry;
@@ -65,6 +67,8 @@ public class SSBlockTagProvider extends BlockTagsProvider {
         tag(Color.MAGENTA).add(Blocks.MAGENTA_TERRACOTTA);
         tag(Color.PINK).add(Blocks.PINK_TERRACOTTA);
 
+        tag(Color.MAROON).add(DDBlocks.TERRACOTTA.get(DDDyes.MAROON.get()).orElseThrow());
+
         tag(Pattern.ALL)
                 .addTag(Pattern.SUN)
                 .addTag(Pattern.MODERN)
@@ -100,6 +104,8 @@ public class SSBlockTagProvider extends BlockTagsProvider {
                 .addTag(Color.BLUE)
                 .addTag(Color.PURPLE)
                 .addTag(Color.MAGENTA)
-                .addTag(Color.PINK);
+                .addTag(Color.PINK)
+
+                .addTag(Color.MAROON);
     }
 }

@@ -23,10 +23,10 @@ public class SSCreativeModeTabs {
                     .title(Component.translatable("itemGroup.%s.terracotta".formatted(MODID)))
                     .icon(() -> TerracottaDatabase.TERRACOTTA_ENTRIES.get(ssLoc("red_geo_terracotta")).block().toStack())
                     .displayItems(((itemDisplayParameters, output) -> {
-                        for (String pattern: SS_PATTERNS) {
+                        for (String pattern: TerracottaDatabase.TERRACOTTA_PATTERNS.keySet()) {
                             if (Config.fadedTerracottaTab)
                                 output.accept(TERRACOTTA_PATTERNS.get(pattern).fadedBlock.toStack());
-                            for (String color : VANILLA_DYES) {
+                            for (String color : TerracottaDatabase.TERRACOTTA_DYES.keySet()) {
                                 output.accept(TERRACOTTA_ENTRIES.get(ssLoc(terracottaName(color, pattern)))
                                         .block().toStack());
                             }

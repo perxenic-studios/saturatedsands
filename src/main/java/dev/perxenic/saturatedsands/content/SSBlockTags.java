@@ -35,6 +35,7 @@ public class SSBlockTags {
         public final static TagKey<Block> ALL = BlockTags.create(ssLoc("colored_terracotta"));
         public final static TagKey<Block> FADED = BlockTags.create(coloredLoc("faded"));
 
+        // Vanilla
         public final static TagKey<Block> WHITE = BlockTags.create(coloredLoc("white"));
         public final static TagKey<Block> LIGHT_GRAY = BlockTags.create(coloredLoc("light_gray"));
         public final static TagKey<Block> GRAY = BlockTags.create(coloredLoc("gray"));
@@ -51,5 +52,8 @@ public class SSBlockTags {
         public final static TagKey<Block> PURPLE = BlockTags.create(coloredLoc("purple"));
         public final static TagKey<Block> MAGENTA = BlockTags.create(coloredLoc("magenta"));
         public final static TagKey<Block> PINK = BlockTags.create(coloredLoc("pink"));
+
+        // Dye Depot
+        public final static TagKey<Block> MAROON = BlockTags.create(coloredLoc("maroon"));
     }
 }

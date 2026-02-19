@@ -27,4 +27,8 @@ public class SaturatedSands {
     public static ResourceLocation ssLoc(String path) {
         return ResourceLocation.fromNamespaceAndPath(MODID, path);
     }
+
+    public static ResourceLocation cLoc(String path) {
+        return ResourceLocation.fromNamespaceAndPath("c", path);
+    }
 }

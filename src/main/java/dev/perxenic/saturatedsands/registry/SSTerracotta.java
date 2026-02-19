@@ -11,16 +11,14 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import static dev.perxenic.saturatedsands.SaturatedSands.MODID;
-import static dev.perxenic.saturatedsands.infra.TerracottaDatabase.SS_PATTERNS;
-import static dev.perxenic.saturatedsands.infra.TerracottaDatabase.VANILLA_DYES;
 
 public class SSTerracotta {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MODID);
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MODID);
 
     public static void register(IEventBus eventBus) {
-        for (String pattern : SS_PATTERNS) {
-            for (String dye : VANILLA_DYES) {
+        for (String pattern : TerracottaDatabase.TERRACOTTA_PATTERNS.keySet()) {
+            for (String dye : TerracottaDatabase.TERRACOTTA_DYES.keySet()) {
                 registerTerracotta(BLOCKS, ITEMS, pattern, dye);
             }
         }

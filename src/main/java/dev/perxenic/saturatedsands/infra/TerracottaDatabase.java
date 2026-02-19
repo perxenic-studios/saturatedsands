@@ -1,59 +1,28 @@
 package dev.perxenic.saturatedsands.infra;
 
-import com.google.common.collect.ImmutableList;
+import com.ninni.dye_depot.registry.DDBlocks;
+import com.ninni.dye_depot.registry.DDDyes;
 import dev.perxenic.mirage.registry.MirageBlocks;
 import dev.perxenic.saturatedsands.SaturatedSands;
 import dev.perxenic.saturatedsands.content.SSBlockTags;
 import dev.perxenic.saturatedsands.content.SSItemTags;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.DyeColor;
+import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.common.Tags;
 
 import java.util.HashMap;
-import java.util.List;
+
+import static dev.perxenic.saturatedsands.SaturatedSands.cLoc;
 
 public class TerracottaDatabase {
     public static final HashMap<ResourceLocation, TerracottaEntry> TERRACOTTA_ENTRIES = new HashMap<>();
 
     public static final HashMap<String, TerracottaDye> TERRACOTTA_DYES = new HashMap<>();
-    public static final List<String> VANILLA_DYES = ImmutableList.of(
-            "white",
-            "light_gray",
-            "gray",
-            "black",
-            "brown",
-            "red",
-            "orange",
-            "yellow",
-            "lime",
-            "green",
-            "cyan",
-            "light_blue",
-            "blue",
-            "purple",
-            "magenta",
-            "pink"
-    );
 
     public static final HashMap<String, TerracottaPattern> TERRACOTTA_PATTERNS = new HashMap<>();
-    public static final List<String> SS_PATTERNS = ImmutableList.of(
-            "sun",
-            "modern",
-            "cross",
-            "crawl",
-            "target",
-            "potion",
-            "fish",
-            "flower",
-            "spoke",
-            "plant",
-            "creep",
-            "geo",
-            "fan",
-            "blade",
-            "arrow",
-            "leaf"
-    );
 
     public static void addEntry(TerracottaEntry entry) {
 
@@ -79,13 +48,16 @@ public class TerracottaDatabase {
     }
 
     static {
+        // Vanilla Dyes
+
         TERRACOTTA_DYES.put("white", new TerracottaDye(
                 Tags.Items.DYES_WHITE,
                 Tags.Items.DYED_WHITE,
                 Tags.Blocks.DYED_WHITE,
                 SSItemTags.Color.WHITE,
                 SSBlockTags.Color.WHITE,
-                DyeColor.WHITE.getMapColor()
+                DyeColor.WHITE.getMapColor(),
+                Items.WHITE_TERRACOTTA.builtInRegistryHolder()
         ));
         TERRACOTTA_DYES.put("light_gray", new TerracottaDye(
                 Tags.Items.DYES_LIGHT_GRAY,
@@ -93,7 +65,8 @@ public class TerracottaDatabase {
                 Tags.Blocks.DYED_LIGHT_GRAY,
                 SSItemTags.Color.LIGHT_GRAY,
                 SSBlockTags.Color.LIGHT_GRAY,
-                DyeColor.LIGHT_GRAY.getMapColor()
+                DyeColor.LIGHT_GRAY.getMapColor(),
+                Items.LIGHT_GRAY_TERRACOTTA.builtInRegistryHolder()
         ));
         TERRACOTTA_DYES.put("gray", new TerracottaDye(
                 Tags.Items.DYES_GRAY,
@@ -101,7 +74,8 @@ public class TerracottaDatabase {
                 Tags.Blocks.DYED_GRAY,
                 SSItemTags.Color.GRAY,
                 SSBlockTags.Color.GRAY,
-                DyeColor.GRAY.getMapColor()
+                DyeColor.GRAY.getMapColor(),
+                Items.GRAY_TERRACOTTA.builtInRegistryHolder()
         ));
         TERRACOTTA_DYES.put("black", new TerracottaDye(
                 Tags.Items.DYES_BLACK,
@@ -109,7 +83,8 @@ public class TerracottaDatabase {
                 Tags.Blocks.DYED_BLACK,
                 SSItemTags.Color.BLACK,
                 SSBlockTags.Color.BLACK,
-                DyeColor.BLACK.getMapColor()
+                DyeColor.BLACK.getMapColor(),
+                Items.BLACK_TERRACOTTA.builtInRegistryHolder()
         ));
         TERRACOTTA_DYES.put("brown", new TerracottaDye(
                 Tags.Items.DYES_BROWN,
@@ -117,7 +92,8 @@ public class TerracottaDatabase {
                 Tags.Blocks.DYED_BROWN,
                 SSItemTags.Color.BROWN,
                 SSBlockTags.Color.BROWN,
-                DyeColor.BROWN.getMapColor()
+                DyeColor.BROWN.getMapColor(),
+                Items.BROWN_TERRACOTTA.builtInRegistryHolder()
         ));
         TERRACOTTA_DYES.put("red", new TerracottaDye(
                 Tags.Items.DYES_RED,
@@ -125,7 +101,8 @@ public class TerracottaDatabase {
                 Tags.Blocks.DYED_RED,
                 SSItemTags.Color.RED,
                 SSBlockTags.Color.RED,
-                DyeColor.RED.getMapColor()
+                DyeColor.RED.getMapColor(),
+                Items.RED_TERRACOTTA.builtInRegistryHolder()
         ));
         TERRACOTTA_DYES.put("orange", new TerracottaDye(
                 Tags.Items.DYES_ORANGE,
@@ -133,7 +110,8 @@ public class TerracottaDatabase {
                 Tags.Blocks.DYED_ORANGE,
                 SSItemTags.Color.ORANGE,
                 SSBlockTags.Color.ORANGE,
-                DyeColor.ORANGE.getMapColor()
+                DyeColor.ORANGE.getMapColor(),
+                Items.ORANGE_TERRACOTTA.builtInRegistryHolder()
         ));
         TERRACOTTA_DYES.put("yellow", new TerracottaDye(
                 Tags.Items.DYES_YELLOW,
@@ -141,7 +119,8 @@ public class TerracottaDatabase {
                 Tags.Blocks.DYED_YELLOW,
                 SSItemTags.Color.YELLOW,
                 SSBlockTags.Color.YELLOW,
-                DyeColor.YELLOW.getMapColor()
+                DyeColor.YELLOW.getMapColor(),
+                Items.YELLOW_TERRACOTTA.builtInRegistryHolder()
         ));
         TERRACOTTA_DYES.put("lime", new TerracottaDye(
                 Tags.Items.DYES_LIME,
@@ -149,7 +128,8 @@ public class TerracottaDatabase {
                 Tags.Blocks.DYED_LIME,
                 SSItemTags.Color.LIME,
                 SSBlockTags.Color.LIME,
-                DyeColor.LIME.getMapColor()
+                DyeColor.LIME.getMapColor(),
+                Items.LIME_TERRACOTTA.builtInRegistryHolder()
         ));
         TERRACOTTA_DYES.put("green", new TerracottaDye(
                 Tags.Items.DYES_GREEN,
@@ -157,7 +137,8 @@ public class TerracottaDatabase {
                 Tags.Blocks.DYED_GREEN,
                 SSItemTags.Color.GREEN,
                 SSBlockTags.Color.GREEN,
-                DyeColor.GREEN.getMapColor()
+                DyeColor.GREEN.getMapColor(),
+                Items.GREEN_TERRACOTTA.builtInRegistryHolder()
         ));
         TERRACOTTA_DYES.put("cyan", new TerracottaDye(
                 Tags.Items.DYES_CYAN,
@@ -165,7 +146,8 @@ public class TerracottaDatabase {
                 Tags.Blocks.DYED_CYAN,
                 SSItemTags.Color.CYAN,
                 SSBlockTags.Color.CYAN,
-                DyeColor.CYAN.getMapColor()
+                DyeColor.CYAN.getMapColor(),
+                Items.CYAN_TERRACOTTA.builtInRegistryHolder()
         ));
         TERRACOTTA_DYES.put("light_blue", new TerracottaDye(
                 Tags.Items.DYES_LIGHT_BLUE,
@@ -173,7 +155,8 @@ public class TerracottaDatabase {
                 Tags.Blocks.DYED_LIGHT_BLUE,
                 SSItemTags.Color.LIGHT_BLUE,
                 SSBlockTags.Color.LIGHT_BLUE,
-                DyeColor.LIGHT_BLUE.getMapColor()
+                DyeColor.LIGHT_BLUE.getMapColor(),
+                Items.LIGHT_BLUE_TERRACOTTA.builtInRegistryHolder()
         ));
         TERRACOTTA_DYES.put("blue", new TerracottaDye(
                 Tags.Items.DYES_BLUE,
@@ -181,7 +164,8 @@ public class TerracottaDatabase {
                 Tags.Blocks.DYED_BLUE,
                 SSItemTags.Color.BLUE,
                 SSBlockTags.Color.BLUE,
-                DyeColor.BLUE.getMapColor()
+                DyeColor.BLUE.getMapColor(),
+                Items.BLUE_TERRACOTTA.builtInRegistryHolder()
         ));
         TERRACOTTA_DYES.put("purple", new TerracottaDye(
                 Tags.Items.DYES_PURPLE,
@@ -189,7 +173,8 @@ public class TerracottaDatabase {
                 Tags.Blocks.DYED_PURPLE,
                 SSItemTags.Color.PURPLE,
                 SSBlockTags.Color.PURPLE,
-                DyeColor.PURPLE.getMapColor()
+                DyeColor.PURPLE.getMapColor(),
+                Items.PURPLE_TERRACOTTA.builtInRegistryHolder()
         ));
         TERRACOTTA_DYES.put("magenta", new TerracottaDye(
                 Tags.Items.DYES_MAGENTA,
@@ -197,7 +182,8 @@ public class TerracottaDatabase {
                 Tags.Blocks.DYED_MAGENTA,
                 SSItemTags.Color.MAGENTA,
                 SSBlockTags.Color.MAGENTA,
-                DyeColor.MAGENTA.getMapColor()
+                DyeColor.MAGENTA.getMapColor(),
+                Items.MAGENTA_TERRACOTTA.builtInRegistryHolder()
         ));
         TERRACOTTA_DYES.put("pink", new TerracottaDye(
                 Tags.Items.DYES_PINK,
@@ -205,7 +191,20 @@ public class TerracottaDatabase {
                 Tags.Blocks.DYED_PINK,
                 SSItemTags.Color.PINK,
                 SSBlockTags.Color.PINK,
-                DyeColor.PINK.getMapColor()
+                DyeColor.PINK.getMapColor(),
+                Items.PINK_TERRACOTTA.builtInRegistryHolder()
+        ));
+
+        // Dye Depot Dyes
+
+        TERRACOTTA_DYES.put("maroon", new TerracottaDye(
+                ItemTags.create(cLoc("dyes/maroon")),
+                ItemTags.create(cLoc("dyed/maroon")),
+                BlockTags.create(cLoc("dyed/maroon")),
+                SSItemTags.Color.MAROON,
+                SSBlockTags.Color.MAROON,
+                DDDyes.MAROON.getMapColor(),
+                DDBlocks.TERRACOTTA.holder(DDDyes.MAROON.get()).orElseThrow()
         ));
 
         TERRACOTTA_PATTERNS.put("sun", new TerracottaPattern(

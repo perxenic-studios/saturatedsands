@@ -66,7 +66,7 @@ public class SSRecipeProvider extends RecipeProvider implements IConditionBuilde
             SingleItemRecipeBuilder.stonecutting(
                     Ingredient.of(dye.dyedTerracottaItemTag),
                     RecipeCategory.BUILDING_BLOCKS,
-                    BuiltInRegistries.ITEM.get(Mirage.mcLoc(name+"_terracotta"))
+                    dye.terracottaItem.value()
             ).unlockedBy("has_"+name+"_terracotta", has(dye.dyedTerracottaItemTag))
                     .save(
                             outputWithConfig(recipeOutput, "coloredReverseStonecutting"),
