@@ -1,21 +1,21 @@
 {
   "values": [
-    "saturatedsands:light_gray_sun_terracotta",
-    "saturatedsands:light_gray_modern_terracotta",
+    "saturatedsands:light_gray_potion_terracotta",
+    "saturatedsands:light_gray_spoke_terracotta",
+    "saturatedsands:light_gray_arrow_terracotta",
     "saturatedsands:light_gray_cross_terracotta",
+    "saturatedsands:light_gray_creep_terracotta",
+    "saturatedsands:light_gray_leaf_terracotta",
+    "saturatedsands:light_gray_sun_terracotta",
     "saturatedsands:light_gray_crawl_terracotta",
     "saturatedsands:light_gray_target_terracotta",
-    "saturatedsands:light_gray_potion_terracotta",
-    "saturatedsands:light_gray_fish_terracotta",
     "saturatedsands:light_gray_flower_terracotta",
-    "saturatedsands:light_gray_spoke_terracotta",
-    "saturatedsands:light_gray_plant_terracotta",
-    "saturatedsands:light_gray_creep_terracotta",
+    "saturatedsands:light_gray_blade_terracotta",
     "saturatedsands:light_gray_geo_terracotta",
     "saturatedsands:light_gray_fan_terracotta",
-    "saturatedsands:light_gray_blade_terracotta",
-    "saturatedsands:light_gray_arrow_terracotta",
-    "saturatedsands:light_gray_leaf_terracotta",
+    "saturatedsands:light_gray_modern_terracotta",
+    "saturatedsands:light_gray_fish_terracotta",
+    "saturatedsands:light_gray_plant_terracotta",
     "minecraft:light_gray_terracotta"
   ]
 }

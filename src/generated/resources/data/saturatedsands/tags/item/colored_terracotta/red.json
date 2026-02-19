@@ -1,21 +1,21 @@
 {
   "values": [
-    "saturatedsands:red_sun_terracotta",
-    "saturatedsands:red_modern_terracotta",
+    "saturatedsands:red_potion_terracotta",
+    "saturatedsands:red_spoke_terracotta",
+    "saturatedsands:red_arrow_terracotta",
     "saturatedsands:red_cross_terracotta",
+    "saturatedsands:red_creep_terracotta",
+    "saturatedsands:red_leaf_terracotta",
+    "saturatedsands:red_sun_terracotta",
     "saturatedsands:red_crawl_terracotta",
     "saturatedsands:red_target_terracotta",
-    "saturatedsands:red_potion_terracotta",
-    "saturatedsands:red_fish_terracotta",
     "saturatedsands:red_flower_terracotta",
-    "saturatedsands:red_spoke_terracotta",
-    "saturatedsands:red_plant_terracotta",
-    "saturatedsands:red_creep_terracotta",
+    "saturatedsands:red_blade_terracotta",
     "saturatedsands:red_geo_terracotta",
     "saturatedsands:red_fan_terracotta",
-    "saturatedsands:red_blade_terracotta",
-    "saturatedsands:red_arrow_terracotta",
-    "saturatedsands:red_leaf_terracotta",
+    "saturatedsands:red_modern_terracotta",
+    "saturatedsands:red_fish_terracotta",
+    "saturatedsands:red_plant_terracotta",
     "minecraft:red_terracotta"
   ]
 }

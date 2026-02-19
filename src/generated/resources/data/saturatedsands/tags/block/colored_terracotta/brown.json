@@ -1,21 +1,21 @@
 {
   "values": [
-    "saturatedsands:brown_sun_terracotta",
-    "saturatedsands:brown_modern_terracotta",
+    "saturatedsands:brown_potion_terracotta",
+    "saturatedsands:brown_spoke_terracotta",
+    "saturatedsands:brown_arrow_terracotta",
     "saturatedsands:brown_cross_terracotta",
+    "saturatedsands:brown_creep_terracotta",
+    "saturatedsands:brown_leaf_terracotta",
+    "saturatedsands:brown_sun_terracotta",
     "saturatedsands:brown_crawl_terracotta",
     "saturatedsands:brown_target_terracotta",
-    "saturatedsands:brown_potion_terracotta",
-    "saturatedsands:brown_fish_terracotta",
     "saturatedsands:brown_flower_terracotta",
-    "saturatedsands:brown_spoke_terracotta",
-    "saturatedsands:brown_plant_terracotta",
-    "saturatedsands:brown_creep_terracotta",
+    "saturatedsands:brown_blade_terracotta",
     "saturatedsands:brown_geo_terracotta",
     "saturatedsands:brown_fan_terracotta",
-    "saturatedsands:brown_blade_terracotta",
-    "saturatedsands:brown_arrow_terracotta",
-    "saturatedsands:brown_leaf_terracotta",
+    "saturatedsands:brown_modern_terracotta",
+    "saturatedsands:brown_fish_terracotta",
+    "saturatedsands:brown_plant_terracotta",
     "minecraft:brown_terracotta"
   ]
 }

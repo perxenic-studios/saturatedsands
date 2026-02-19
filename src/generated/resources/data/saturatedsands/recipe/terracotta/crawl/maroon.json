@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "saturatedsands:config",
+      "config_key": "fadedTerracottaDyeing"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "mirage:faded_crawl_terracotta"
+    },
+    ".": {
+      "tag": "c:dyes/maroon"
+    }
+  },
+  "pattern": [
+    "###",
+    "#.#",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "saturatedsands:maroon_crawl_terracotta"
+  }
+}

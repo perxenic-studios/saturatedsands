@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "saturatedsands:terracotta/creep/maroon",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "saturatedsands:terracotta/creep/maroon",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "saturatedsands:terracotta/creep/maroon"
+    },
+    "facing=west": {
+      "model": "saturatedsands:terracotta/creep/maroon",
+      "y": 90
+    }
+  }
+}

@@ -1,21 +1,21 @@
 {
   "values": [
-    "saturatedsands:white_sun_terracotta",
-    "saturatedsands:white_modern_terracotta",
+    "saturatedsands:white_potion_terracotta",
+    "saturatedsands:white_spoke_terracotta",
+    "saturatedsands:white_arrow_terracotta",
     "saturatedsands:white_cross_terracotta",
+    "saturatedsands:white_creep_terracotta",
+    "saturatedsands:white_leaf_terracotta",
+    "saturatedsands:white_sun_terracotta",
     "saturatedsands:white_crawl_terracotta",
     "saturatedsands:white_target_terracotta",
-    "saturatedsands:white_potion_terracotta",
-    "saturatedsands:white_fish_terracotta",
     "saturatedsands:white_flower_terracotta",
-    "saturatedsands:white_spoke_terracotta",
-    "saturatedsands:white_plant_terracotta",
-    "saturatedsands:white_creep_terracotta",
+    "saturatedsands:white_blade_terracotta",
     "saturatedsands:white_geo_terracotta",
     "saturatedsands:white_fan_terracotta",
-    "saturatedsands:white_blade_terracotta",
-    "saturatedsands:white_arrow_terracotta",
-    "saturatedsands:white_leaf_terracotta",
+    "saturatedsands:white_modern_terracotta",
+    "saturatedsands:white_fish_terracotta",
+    "saturatedsands:white_plant_terracotta",
     "minecraft:white_terracotta"
   ]
 }

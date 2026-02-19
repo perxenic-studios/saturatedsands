@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "saturatedsands:terracotta/plant/maroon",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "saturatedsands:terracotta/plant/maroon",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "saturatedsands:terracotta/plant/maroon"
+    },
+    "facing=west": {
+      "model": "saturatedsands:terracotta/plant/maroon",
+      "y": 90
+    }
+  }
+}

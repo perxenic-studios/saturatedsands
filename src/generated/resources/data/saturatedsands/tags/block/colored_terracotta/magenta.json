@@ -1,21 +1,21 @@
 {
   "values": [
-    "saturatedsands:magenta_sun_terracotta",
-    "saturatedsands:magenta_modern_terracotta",
+    "saturatedsands:magenta_potion_terracotta",
+    "saturatedsands:magenta_spoke_terracotta",
+    "saturatedsands:magenta_arrow_terracotta",
     "saturatedsands:magenta_cross_terracotta",
+    "saturatedsands:magenta_creep_terracotta",
+    "saturatedsands:magenta_leaf_terracotta",
+    "saturatedsands:magenta_sun_terracotta",
     "saturatedsands:magenta_crawl_terracotta",
     "saturatedsands:magenta_target_terracotta",
-    "saturatedsands:magenta_potion_terracotta",
-    "saturatedsands:magenta_fish_terracotta",
     "saturatedsands:magenta_flower_terracotta",
-    "saturatedsands:magenta_spoke_terracotta",
-    "saturatedsands:magenta_plant_terracotta",
-    "saturatedsands:magenta_creep_terracotta",
+    "saturatedsands:magenta_blade_terracotta",
     "saturatedsands:magenta_geo_terracotta",
     "saturatedsands:magenta_fan_terracotta",
-    "saturatedsands:magenta_blade_terracotta",
-    "saturatedsands:magenta_arrow_terracotta",
-    "saturatedsands:magenta_leaf_terracotta",
+    "saturatedsands:magenta_modern_terracotta",
+    "saturatedsands:magenta_fish_terracotta",
+    "saturatedsands:magenta_plant_terracotta",
     "minecraft:magenta_terracotta"
   ]
 }

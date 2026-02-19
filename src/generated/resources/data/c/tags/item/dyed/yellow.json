@@ -1,20 +1,20 @@
 {
   "values": [
-    "saturatedsands:yellow_sun_terracotta",
-    "saturatedsands:yellow_modern_terracotta",
+    "saturatedsands:yellow_potion_terracotta",
+    "saturatedsands:yellow_spoke_terracotta",
+    "saturatedsands:yellow_arrow_terracotta",
     "saturatedsands:yellow_cross_terracotta",
+    "saturatedsands:yellow_creep_terracotta",
+    "saturatedsands:yellow_leaf_terracotta",
+    "saturatedsands:yellow_sun_terracotta",
     "saturatedsands:yellow_crawl_terracotta",
     "saturatedsands:yellow_target_terracotta",
-    "saturatedsands:yellow_potion_terracotta",
-    "saturatedsands:yellow_fish_terracotta",
     "saturatedsands:yellow_flower_terracotta",
-    "saturatedsands:yellow_spoke_terracotta",
-    "saturatedsands:yellow_plant_terracotta",
-    "saturatedsands:yellow_creep_terracotta",
+    "saturatedsands:yellow_blade_terracotta",
     "saturatedsands:yellow_geo_terracotta",
     "saturatedsands:yellow_fan_terracotta",
-    "saturatedsands:yellow_blade_terracotta",
-    "saturatedsands:yellow_arrow_terracotta",
-    "saturatedsands:yellow_leaf_terracotta"
+    "saturatedsands:yellow_modern_terracotta",
+    "saturatedsands:yellow_fish_terracotta",
+    "saturatedsands:yellow_plant_terracotta"
   ]
 }
