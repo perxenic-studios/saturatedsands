@@ -217,6 +217,16 @@ public class TerracottaDatabase {
                 DDBlocks.TERRACOTTA.holder(DDDyes.ROSE.get()).orElseThrow()
         ));
 
+        TERRACOTTA_DYES.put("coral", new TerracottaDye(
+                ItemTags.create(cLoc("dyes/coral")),
+                ItemTags.create(cLoc("dyed/coral")),
+                BlockTags.create(cLoc("dyed/coral")),
+                SSItemTags.Color.CORAL,
+                SSBlockTags.Color.CORAL,
+                DDDyes.CORAL.getMapColor(),
+                DDBlocks.TERRACOTTA.holder(DDDyes.CORAL.get()).orElseThrow()
+        ));
+
         // Vanilla Patterns
 
         TERRACOTTA_PATTERNS.put("sun", new TerracottaPattern(
