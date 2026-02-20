@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "saturatedsands:config",
+      "config_key": "fadedTerracottaStonecutting"
+    }
+  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "saturatedsands:colored_terracotta/faded"
+  },
+  "result": {
+    "count": 1,
+    "id": "saturatedsands:faded_heart_terracotta"
+  }
+}

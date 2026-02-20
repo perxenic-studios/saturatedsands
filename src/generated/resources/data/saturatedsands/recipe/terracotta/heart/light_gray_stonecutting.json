@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "saturatedsands:config",
+      "config_key": "coloredTerracottaStonecutting"
+    }
+  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "saturatedsands:colored_terracotta/light_gray"
+  },
+  "result": {
+    "count": 1,
+    "id": "saturatedsands:light_gray_heart_terracotta"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "saturatedsands:terracotta/heart/ginger",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "saturatedsands:terracotta/heart/ginger",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "saturatedsands:terracotta/heart/ginger"
+    },
+    "facing=west": {
+      "model": "saturatedsands:terracotta/heart/ginger",
+      "y": 90
+    }
+  }
+}

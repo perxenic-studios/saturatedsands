@@ -33,6 +33,7 @@ public class SSItemTags {
         // Dye Depot
         public final static TagKey<Item> RING = ItemTags.create(patternedLoc("ring")); // Maroon
         public final static TagKey<Item> PETAL = ItemTags.create(patternedLoc("petal")); // Rose
+        public final static TagKey<Item> HEART = ItemTags.create(patternedLoc("heart")); // Coral
     }
 
     public static class Color {

@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "saturatedsands:config",
+      "config_key": "coloredTerracottaStonecutting"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_brown_terracotta": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#saturatedsands:colored_terracotta/brown"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "saturatedsands:terracotta/heart/brown_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_brown_terracotta"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "saturatedsands:terracotta/heart/brown_stonecutting"
+    ]
+  }
+}

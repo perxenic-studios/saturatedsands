@@ -365,6 +365,11 @@ public class TerracottaDatabase {
                 SSBlockTags.Pattern.PETAL,
                 SSTerracotta.registerFadedTerracotta(SSTerracotta.BLOCKS, SSTerracotta.ITEMS, "petal")
         ));
+        TERRACOTTA_PATTERNS.put("heart", new TerracottaPattern(
+                SSItemTags.Pattern.HEART,
+                SSBlockTags.Pattern.HEART,
+                SSTerracotta.registerFadedTerracotta(SSTerracotta.BLOCKS, SSTerracotta.ITEMS, "heart")
+        ));
 
         // Filter pattern orderings
         PatternOrdering.GLAZED_ORDERING.orderingList.removeIf(pattern -> !TERRACOTTA_PATTERNS.containsKey(pattern));
