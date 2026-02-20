@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "saturatedsands:config",
+      "config_key": "coloredTerracottaStonecutting"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_purple_terracotta": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#saturatedsands:colored_terracotta/purple"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "saturatedsands:terracotta/petal/purple_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_purple_terracotta"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "saturatedsands:terracotta/petal/purple_stonecutting"
+    ]
+  }
+}

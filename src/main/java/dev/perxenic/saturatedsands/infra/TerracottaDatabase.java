@@ -360,6 +360,11 @@ public class TerracottaDatabase {
                 SSBlockTags.Pattern.RING,
                 SSTerracotta.registerFadedTerracotta(SSTerracotta.BLOCKS, SSTerracotta.ITEMS, "ring")
         ));
+        TERRACOTTA_PATTERNS.put("petal", new TerracottaPattern(
+                SSItemTags.Pattern.PETAL,
+                SSBlockTags.Pattern.PETAL,
+                SSTerracotta.registerFadedTerracotta(SSTerracotta.BLOCKS, SSTerracotta.ITEMS, "petal")
+        ));
 
         // Filter pattern orderings
         PatternOrdering.GLAZED_ORDERING.orderingList.removeIf(pattern -> !TERRACOTTA_PATTERNS.containsKey(pattern));
