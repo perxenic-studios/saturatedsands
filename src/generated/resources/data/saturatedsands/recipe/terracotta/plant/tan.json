@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "saturatedsands:config",
+      "config_key": "fadedTerracottaDyeing"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "mirage:faded_plant_terracotta"
+    },
+    ".": {
+      "tag": "c:dyes/tan"
+    }
+  },
+  "pattern": [
+    "###",
+    "#.#",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "saturatedsands:tan_plant_terracotta"
+  }
+}

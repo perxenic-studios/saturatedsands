@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "saturatedsands:config",
+      "config_key": "coloredReverseStonecutting"
+    }
+  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "saturatedsands:colored_terracotta/tan"
+  },
+  "result": {
+    "count": 1,
+    "id": "dye_depot:tan_terracotta"
+  }
+}
