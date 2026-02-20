@@ -14,7 +14,7 @@ public class SSBlockTags {
     public static class Pattern {
         public final static TagKey<Block> ALL = BlockTags.create(ssLoc("patterned_terracotta"));
 
-        // Terracotta patterns, comments describe which colour glazed terracotta they originated from
+        // Vanilla
         public final static TagKey<Block> SUN = BlockTags.create(patternedLoc("sun")); // White
         public final static TagKey<Block> MODERN = BlockTags.create(patternedLoc("modern")); // Light Gray
         public final static TagKey<Block> CROSS = BlockTags.create(patternedLoc("cross")); // Gray
@@ -31,6 +31,9 @@ public class SSBlockTags {
         public final static TagKey<Block> BLADE = BlockTags.create(patternedLoc("blade")); // Purple
         public final static TagKey<Block> ARROW = BlockTags.create(patternedLoc("arrow")); // Magenta
         public final static TagKey<Block> LEAF = BlockTags.create(patternedLoc("leaf")); // Pink
+
+        // Dye Depot
+        public final static TagKey<Block> RING = BlockTags.create(patternedLoc("ring")); // Maroon
     }
 
     public static class Color {

@@ -1,10 +1,8 @@
 package dev.perxenic.saturatedsands.content;
 
-import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
 
 import static dev.perxenic.saturatedsands.SaturatedSands.ssLoc;
 import static dev.perxenic.saturatedsands.infra.TerracottaDye.coloredLoc;
@@ -14,7 +12,7 @@ public class SSItemTags {
     public static class Pattern {
         public final static TagKey<Item> ALL = ItemTags.create(ssLoc("patterned_terracotta"));
 
-        // Terracotta patterns, comments describe which colour glazed terracotta they originated from
+        // Vanilla
         public final static TagKey<Item> SUN = ItemTags.create(patternedLoc("sun")); // White
         public final static TagKey<Item> MODERN = ItemTags.create(patternedLoc("modern")); // Light Gray
         public final static TagKey<Item> CROSS = ItemTags.create(patternedLoc("cross")); // Gray
@@ -31,6 +29,9 @@ public class SSItemTags {
         public final static TagKey<Item> BLADE = ItemTags.create(patternedLoc("blade")); // Purple
         public final static TagKey<Item> ARROW = ItemTags.create(patternedLoc("arrow")); // Magenta
         public final static TagKey<Item> LEAF = ItemTags.create(patternedLoc("leaf")); // Pink
+
+        // Dye Depot
+        public final static TagKey<Item> RING = ItemTags.create(patternedLoc("ring")); // Maroon
     }
 
     public static class Color {

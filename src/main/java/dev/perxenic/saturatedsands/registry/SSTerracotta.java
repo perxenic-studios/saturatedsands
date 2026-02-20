@@ -5,6 +5,7 @@ import dev.perxenic.saturatedsands.infra.TerracottaEntry;
 import net.minecraft.world.level.block.GlazedTerracottaBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -25,6 +26,25 @@ public class SSTerracotta {
 
         ITEMS.register(eventBus);
         BLOCKS.register(eventBus);
+    }
+
+    public static DeferredBlock<GlazedTerracottaBlock> registerFadedTerracotta(
+            DeferredRegister.Blocks blockRegister,
+            DeferredRegister.Items itemRegister,
+            String pattern
+    ) {
+        DeferredBlock<GlazedTerracottaBlock> block = blockRegister.register(terracottaName("faded", pattern),
+                () -> new GlazedTerracottaBlock(BlockBehaviour.Properties.of()
+                        .mapColor(MapColor.COLOR_ORANGE)
+                        .instrument(NoteBlockInstrument.BASEDRUM)
+                        .requiresCorrectToolForDrops()
+                        .strength(1.4F)
+                        .pushReaction(PushReaction.PUSH_ONLY)
+                ));
+
+        itemRegister.registerSimpleBlockItem(block);
+
+        return block;
     }
 
     public static void registerTerracotta(

@@ -6,6 +6,7 @@ import dev.perxenic.mirage.registry.MirageBlocks;
 import dev.perxenic.saturatedsands.SaturatedSands;
 import dev.perxenic.saturatedsands.content.SSBlockTags;
 import dev.perxenic.saturatedsands.content.SSItemTags;
+import dev.perxenic.saturatedsands.registry.SSTerracotta;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
@@ -350,6 +351,14 @@ public class TerracottaDatabase {
                 SSItemTags.Pattern.LEAF,
                 SSBlockTags.Pattern.LEAF,
                 MirageBlocks.FADED_LEAF_TERRACOTTA
+        ));
+
+        // Dye Depot Patterns
+
+        TERRACOTTA_PATTERNS.put("ring", new TerracottaPattern(
+                SSItemTags.Pattern.RING,
+                SSBlockTags.Pattern.RING,
+                SSTerracotta.registerFadedTerracotta(SSTerracotta.BLOCKS, SSTerracotta.ITEMS, "ring")
         ));
 
         // Filter pattern orderings

@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "saturatedsands:config",
+      "config_key": "coloredTerracottaStonecutting"
+    }
+  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "saturatedsands:colored_terracotta/purple"
+  },
+  "result": {
+    "count": 1,
+    "id": "saturatedsands:purple_ring_terracotta"
+  }
+}
