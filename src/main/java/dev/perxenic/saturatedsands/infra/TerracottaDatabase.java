@@ -375,6 +375,11 @@ public class TerracottaDatabase {
                 SSBlockTags.Pattern.BIRD,
                 SSTerracotta.registerFadedTerracotta(SSTerracotta.BLOCKS, SSTerracotta.ITEMS, "bird")
         ));
+        TERRACOTTA_PATTERNS.put("knot", new TerracottaPattern(
+                SSItemTags.Pattern.KNOT,
+                SSBlockTags.Pattern.KNOT,
+                SSTerracotta.registerFadedTerracotta(SSTerracotta.BLOCKS, SSTerracotta.ITEMS, "knot")
+        ));
 
         // Filter pattern orderings
         PatternOrdering.GLAZED_ORDERING.orderingList.removeIf(pattern -> !TERRACOTTA_PATTERNS.containsKey(pattern));

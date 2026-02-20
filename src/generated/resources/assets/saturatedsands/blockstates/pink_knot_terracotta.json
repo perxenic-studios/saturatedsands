@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "saturatedsands:terracotta/knot/pink",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "saturatedsands:terracotta/knot/pink",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "saturatedsands:terracotta/knot/pink"
+    },
+    "facing=west": {
+      "model": "saturatedsands:terracotta/knot/pink",
+      "y": 90
+    }
+  }
+}
