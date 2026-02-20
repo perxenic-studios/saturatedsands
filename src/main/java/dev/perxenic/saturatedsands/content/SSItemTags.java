@@ -59,5 +59,6 @@ public class SSItemTags {
         public final static TagKey<Item> MAROON = ItemTags.create(coloredLoc("maroon"));
         public final static TagKey<Item> ROSE = ItemTags.create(coloredLoc("rose"));
         public final static TagKey<Item> CORAL = ItemTags.create(coloredLoc("coral"));
+        public final static TagKey<Item> GINGER = ItemTags.create(coloredLoc("ginger"));
     }
 }

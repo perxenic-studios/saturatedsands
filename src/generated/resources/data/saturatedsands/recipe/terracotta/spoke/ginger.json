@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "saturatedsands:config",
+      "config_key": "fadedTerracottaDyeing"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "mirage:faded_spoke_terracotta"
+    },
+    ".": {
+      "tag": "c:dyes/ginger"
+    }
+  },
+  "pattern": [
+    "###",
+    "#.#",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "saturatedsands:ginger_spoke_terracotta"
+  }
+}

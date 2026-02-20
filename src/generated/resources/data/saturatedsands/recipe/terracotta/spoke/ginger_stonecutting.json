@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "saturatedsands:config",
+      "config_key": "coloredTerracottaStonecutting"
+    }
+  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "saturatedsands:colored_terracotta/ginger"
+  },
+  "result": {
+    "count": 1,
+    "id": "saturatedsands:ginger_spoke_terracotta"
+  }
+}

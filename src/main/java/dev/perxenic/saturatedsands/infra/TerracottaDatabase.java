@@ -227,6 +227,16 @@ public class TerracottaDatabase {
                 DDBlocks.TERRACOTTA.holder(DDDyes.CORAL.get()).orElseThrow()
         ));
 
+        TERRACOTTA_DYES.put("ginger", new TerracottaDye(
+                ItemTags.create(cLoc("dyes/ginger")),
+                ItemTags.create(cLoc("dyed/ginger")),
+                BlockTags.create(cLoc("dyed/ginger")),
+                SSItemTags.Color.GINGER,
+                SSBlockTags.Color.GINGER,
+                DDDyes.GINGER.getMapColor(),
+                DDBlocks.TERRACOTTA.holder(DDDyes.GINGER.get()).orElseThrow()
+        ));
+
         // Vanilla Patterns
 
         TERRACOTTA_PATTERNS.put("sun", new TerracottaPattern(
