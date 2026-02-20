@@ -1,8 +1,10 @@
 package dev.perxenic.saturatedsands.content;
 
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 
 import static dev.perxenic.saturatedsands.SaturatedSands.ssLoc;
 import static dev.perxenic.saturatedsands.infra.TerracottaDye.coloredLoc;
@@ -34,6 +36,7 @@ public class SSItemTags {
         public final static TagKey<Item> RING = ItemTags.create(patternedLoc("ring")); // Maroon
         public final static TagKey<Item> PETAL = ItemTags.create(patternedLoc("petal")); // Rose
         public final static TagKey<Item> HEART = ItemTags.create(patternedLoc("heart")); // Coral
+        public final static TagKey<Item> BIRD = ItemTags.create(patternedLoc("bird")); // Ginger
     }
 
     public static class Color {

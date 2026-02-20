@@ -36,6 +36,7 @@ public class SSBlockTags {
         public final static TagKey<Block> RING = BlockTags.create(patternedLoc("ring")); // Maroon
         public final static TagKey<Block> PETAL = BlockTags.create(patternedLoc("petal")); // Rose
         public final static TagKey<Block> HEART = BlockTags.create(patternedLoc("heart")); // Coral
+        public final static TagKey<Block> BIRD = BlockTags.create(patternedLoc("bird")); // Ginger
     }
 
     public static class Color {
