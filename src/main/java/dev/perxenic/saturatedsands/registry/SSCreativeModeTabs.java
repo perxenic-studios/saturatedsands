@@ -26,7 +26,7 @@ public class SSCreativeModeTabs {
                         for (String pattern: TerracottaDatabase.TERRACOTTA_PATTERNS.keySet()) {
                             if (Config.fadedTerracottaTab)
                                 output.accept(TERRACOTTA_PATTERNS.get(pattern).fadedBlock.toStack());
-                            for (String color : TerracottaDatabase.TERRACOTTA_DYES.keySet()) {
+                            for (String color : Config.dyeOrdering.orderingList) {
                                 output.accept(TERRACOTTA_ENTRIES.get(ssLoc(terracottaName(color, pattern)))
                                         .block().toStack());
                             }

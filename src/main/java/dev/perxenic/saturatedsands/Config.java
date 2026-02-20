@@ -1,5 +1,6 @@
 package dev.perxenic.saturatedsands;
 
+import dev.perxenic.saturatedsands.infra.DyeOrdering;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.config.ModConfigEvent;
@@ -35,6 +36,10 @@ public class Config {
             .comment("Whether to add the faded terracotta from mirage into Saturated Sands' creative tab")
             .define("fadedTerracottaTab", true);
 
+    public static final ModConfigSpec.EnumValue<DyeOrdering> DYE_ORDERING = BUILDER
+            .comment("The ordering of terracotta by colour within the creative inventory")
+            .defineEnum("dyeOrdering", DyeOrdering.DEFAULT_SPECTRUM);
+
     static final ModConfigSpec SPEC = BUILDER.build();
 
     public static boolean fadedTerracottaDyeing;
@@ -43,6 +48,8 @@ public class Config {
     public static boolean coloredTerracottaStonecutting;
     public static boolean coloredReverseStonecutting;
     public static boolean fadedTerracottaTab;
+
+    public static DyeOrdering dyeOrdering;
 
     public static final HashMap<String, Boolean> configDict = new HashMap<>();
 
@@ -65,5 +72,7 @@ public class Config {
 
         fadedTerracottaTab = FADED_TERRACOTTA_TAB.get();
         configDict.put("fadedTerracottaTab", fadedTerracottaTab);
+
+        dyeOrdering = DYE_ORDERING.get();
     }
 }

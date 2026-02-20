@@ -13,6 +13,8 @@ import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.common.Tags;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 
 import static dev.perxenic.saturatedsands.SaturatedSands.cLoc;
@@ -256,6 +258,16 @@ public class TerracottaDatabase {
                 DDDyes.BEIGE.getMapColor(),
                 DDBlocks.TERRACOTTA.holder(DDDyes.BEIGE.get()).orElseThrow()
         ));
+
+        // Filter dye orderings
+        DyeOrdering.DEFAULT_SPECTRUM.orderingList.removeIf(color -> !TERRACOTTA_DYES.containsKey(color));
+        DyeOrdering.MOD_SEPARATED_SPECTRUM.orderingList.removeIf(color -> !TERRACOTTA_DYES.containsKey(color));
+
+        // Populate the dye orderings
+        TERRACOTTA_DYES.forEach((name, dye) -> {
+            DyeOrdering.ALPHABETICAL.orderingList.add(name);
+        });
+        DyeOrdering.ALPHABETICAL.orderingList.sort(Comparator.naturalOrder());
 
         // Vanilla Patterns
 
