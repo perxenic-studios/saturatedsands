@@ -199,7 +199,6 @@ public class TerracottaDatabase {
         ));
 
         // Dye Depot Dyes
-
         TERRACOTTA_DYES.put("maroon", new TerracottaDye(
                 ItemTags.create(cLoc("dyes/maroon")),
                 ItemTags.create(cLoc("dyed/maroon")),
@@ -209,7 +208,6 @@ public class TerracottaDatabase {
                 DDDyes.MAROON.getMapColor(),
                 DDBlocks.TERRACOTTA.holder(DDDyes.MAROON.get()).orElseThrow()
         ));
-
         TERRACOTTA_DYES.put("rose", new TerracottaDye(
                 ItemTags.create(cLoc("dyes/rose")),
                 ItemTags.create(cLoc("dyed/rose")),
@@ -219,7 +217,6 @@ public class TerracottaDatabase {
                 DDDyes.ROSE.getMapColor(),
                 DDBlocks.TERRACOTTA.holder(DDDyes.ROSE.get()).orElseThrow()
         ));
-
         TERRACOTTA_DYES.put("coral", new TerracottaDye(
                 ItemTags.create(cLoc("dyes/coral")),
                 ItemTags.create(cLoc("dyed/coral")),
@@ -229,7 +226,6 @@ public class TerracottaDatabase {
                 DDDyes.CORAL.getMapColor(),
                 DDBlocks.TERRACOTTA.holder(DDDyes.CORAL.get()).orElseThrow()
         ));
-
         TERRACOTTA_DYES.put("ginger", new TerracottaDye(
                 ItemTags.create(cLoc("dyes/ginger")),
                 ItemTags.create(cLoc("dyed/ginger")),
@@ -239,7 +235,6 @@ public class TerracottaDatabase {
                 DDDyes.GINGER.getMapColor(),
                 DDBlocks.TERRACOTTA.holder(DDDyes.GINGER.get()).orElseThrow()
         ));
-
         TERRACOTTA_DYES.put("tan", new TerracottaDye(
                 ItemTags.create(cLoc("dyes/tan")),
                 ItemTags.create(cLoc("dyed/tan")),
@@ -249,7 +244,6 @@ public class TerracottaDatabase {
                 DDDyes.TAN.getMapColor(),
                 DDBlocks.TERRACOTTA.holder(DDDyes.TAN.get()).orElseThrow()
         ));
-
         TERRACOTTA_DYES.put("beige", new TerracottaDye(
                 ItemTags.create(cLoc("dyes/beige")),
                 ItemTags.create(cLoc("dyed/beige")),
@@ -258,6 +252,15 @@ public class TerracottaDatabase {
                 SSBlockTags.Color.BEIGE,
                 DDDyes.BEIGE.getMapColor(),
                 DDBlocks.TERRACOTTA.holder(DDDyes.BEIGE.get()).orElseThrow()
+        ));
+        TERRACOTTA_DYES.put("olive", new TerracottaDye(
+                ItemTags.create(cLoc("dyes/olive")),
+                ItemTags.create(cLoc("dyed/olive")),
+                BlockTags.create(cLoc("dyed/olive")),
+                SSItemTags.Color.OLIVE,
+                SSBlockTags.Color.OLIVE,
+                DDDyes.OLIVE.getMapColor(),
+                DDBlocks.TERRACOTTA.holder(DDDyes.OLIVE.get()).orElseThrow()
         ));
 
         // Filter dye orderings

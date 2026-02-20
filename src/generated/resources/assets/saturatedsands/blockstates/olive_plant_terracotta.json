@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "saturatedsands:terracotta/plant/olive",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "saturatedsands:terracotta/plant/olive",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "saturatedsands:terracotta/plant/olive"
+    },
+    "facing=west": {
+      "model": "saturatedsands:terracotta/plant/olive",
+      "y": 90
+    }
+  }
+}

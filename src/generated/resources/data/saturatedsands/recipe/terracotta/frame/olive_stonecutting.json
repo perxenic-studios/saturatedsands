@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "saturatedsands:config",
+      "config_key": "coloredTerracottaStonecutting"
+    }
+  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "saturatedsands:colored_terracotta/olive"
+  },
+  "result": {
+    "count": 1,
+    "id": "saturatedsands:olive_frame_terracotta"
+  }
+}

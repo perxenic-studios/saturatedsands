@@ -70,5 +70,6 @@ public class SSBlockTags {
         public final static TagKey<Block> GINGER = BlockTags.create(coloredLoc("ginger"));
         public final static TagKey<Block> TAN = BlockTags.create(coloredLoc("tan"));
         public final static TagKey<Block> BEIGE = BlockTags.create(coloredLoc("beige"));
+        public final static TagKey<Block> OLIVE = BlockTags.create(coloredLoc("olive"));
     }
 }
