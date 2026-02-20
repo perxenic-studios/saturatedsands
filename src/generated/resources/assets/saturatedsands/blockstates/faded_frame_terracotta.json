@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "saturatedsands:terracotta/frame/faded",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "saturatedsands:terracotta/frame/faded",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "saturatedsands:terracotta/frame/faded"
+    },
+    "facing=west": {
+      "model": "saturatedsands:terracotta/frame/faded",
+      "y": 90
+    }
+  }
+}

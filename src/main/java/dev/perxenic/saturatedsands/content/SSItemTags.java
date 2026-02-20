@@ -38,6 +38,7 @@ public class SSItemTags {
         public final static TagKey<Item> HEART = ItemTags.create(patternedLoc("heart")); // Coral
         public final static TagKey<Item> BIRD = ItemTags.create(patternedLoc("bird")); // Ginger
         public final static TagKey<Item> KNOT = ItemTags.create(patternedLoc("knot")); // Tan
+        public final static TagKey<Item> FRAME = ItemTags.create(patternedLoc("frame")); // Beige
     }
 
     public static class Color {
