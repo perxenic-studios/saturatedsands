@@ -351,5 +351,15 @@ public class TerracottaDatabase {
                 SSBlockTags.Pattern.LEAF,
                 MirageBlocks.FADED_LEAF_TERRACOTTA
         ));
+
+        // Filter pattern orderings
+        PatternOrdering.GLAZED_ORDERING.orderingList.removeIf(pattern -> !TERRACOTTA_PATTERNS.containsKey(pattern));
+        PatternOrdering.MOD_SEPARATED_GLAZED.orderingList.removeIf(pattern -> !TERRACOTTA_PATTERNS.containsKey(pattern));
+
+        // Populate the pattern orderings
+        TERRACOTTA_PATTERNS.forEach((name, pattern) -> {
+            PatternOrdering.ALPHABETICAL.orderingList.add(name);
+        });
+        PatternOrdering.ALPHABETICAL.orderingList.sort(Comparator.naturalOrder());
     }
 }

@@ -1,6 +1,7 @@
 package dev.perxenic.saturatedsands;
 
 import dev.perxenic.saturatedsands.infra.DyeOrdering;
+import dev.perxenic.saturatedsands.infra.PatternOrdering;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.config.ModConfigEvent;
@@ -40,6 +41,10 @@ public class Config {
             .comment("The ordering of terracotta by colour within the creative inventory")
             .defineEnum("dyeOrdering", DyeOrdering.DEFAULT_SPECTRUM);
 
+    public static final ModConfigSpec.EnumValue<PatternOrdering> PATTERN_ORDERING = BUILDER
+            .comment("The ordering of terracotta by colour within the creative inventory")
+            .defineEnum("patternOrdering", PatternOrdering.GLAZED_ORDERING);
+
     static final ModConfigSpec SPEC = BUILDER.build();
 
     public static boolean fadedTerracottaDyeing;
@@ -50,6 +55,7 @@ public class Config {
     public static boolean fadedTerracottaTab;
 
     public static DyeOrdering dyeOrdering;
+    public static PatternOrdering patternOrdering;
 
     public static final HashMap<String, Boolean> configDict = new HashMap<>();
 
@@ -74,5 +80,6 @@ public class Config {
         configDict.put("fadedTerracottaTab", fadedTerracottaTab);
 
         dyeOrdering = DYE_ORDERING.get();
+        patternOrdering = PATTERN_ORDERING.get();
     }
 }

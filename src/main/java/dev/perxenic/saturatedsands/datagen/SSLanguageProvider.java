@@ -31,6 +31,7 @@ public class SSLanguageProvider extends LanguageProvider {
         addConfig("fadedTerracottaTab");
 
         addConfig("dyeOrdering");
+        addConfig("patternOrdering");
 
         TerracottaDatabase.TERRACOTTA_ENTRIES.forEach(((location, entry) -> {
             addBlock(
