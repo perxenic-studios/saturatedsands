@@ -46,6 +46,10 @@ public class SSLanguageProvider extends LanguageProvider {
         });
 
         TerracottaDatabase.TERRACOTTA_PATTERNS.forEach((name, pattern) -> {
+            // Add lang for new faded blocks
+            if (pattern.fadedBlock.getId().getNamespace().equals(SaturatedSands.MODID))
+                addBlock(pattern.fadedBlock, "Faded %s Terracotta".formatted(snakeToTitle(name)));
+
             addTag(() -> pattern.itemTag, snakeToTitle(name) + " Terracotta");
             addTag(() -> pattern.blockTag, snakeToTitle(name) + " Terracotta");
         });
