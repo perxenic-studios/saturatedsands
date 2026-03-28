@@ -36,7 +36,7 @@ public class SSRecipeProvider extends RecipeProvider implements IConditionBuilde
                     .unlockedBy("has_faded_"+entry.pattern(), has(fadedItem))
                     .save(
                             outputWithConfig(recipeOutput, "fadedTerracottaDyeing"),
-                            ssLoc(entry.getPath())
+                            ssLoc(entry.getRecipePath())
                     );
 
             SingleItemRecipeBuilder.stonecutting(
@@ -46,7 +46,7 @@ public class SSRecipeProvider extends RecipeProvider implements IConditionBuilde
                     ).unlockedBy("has_"+entry.color()+"_terracotta", has(entry.getTerracottaDye().dyedTerracottaItemTag))
                     .save(
                             outputWithConfig(recipeOutput, "coloredTerracottaStonecutting"),
-                            ssLoc(entry.getPath()+"_stonecutting")
+                            ssLoc(entry.getRecipePath()+"_stonecutting")
                     );
         }));
 

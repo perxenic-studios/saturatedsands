@@ -1,18 +1,18 @@
 {
   "variants": {
     "facing=east": {
-      "model": "saturatedsands:terracotta/creep/brown",
+      "model": "saturatedsands:block/brown_creep_terracotta",
       "y": 270
     },
     "facing=north": {
-      "model": "saturatedsands:terracotta/creep/brown",
+      "model": "saturatedsands:block/brown_creep_terracotta",
       "y": 180
     },
     "facing=south": {
-      "model": "saturatedsands:terracotta/creep/brown"
+      "model": "saturatedsands:block/brown_creep_terracotta"
     },
     "facing=west": {
-      "model": "saturatedsands:terracotta/creep/brown",
+      "model": "saturatedsands:block/brown_creep_terracotta",
       "y": 90
     }
   }

@@ -1,18 +1,18 @@
 {
   "variants": {
     "facing=east": {
-      "model": "saturatedsands:terracotta/petal/beige",
+      "model": "saturatedsands:block/beige_petal_terracotta",
       "y": 270
     },
     "facing=north": {
-      "model": "saturatedsands:terracotta/petal/beige",
+      "model": "saturatedsands:block/beige_petal_terracotta",
       "y": 180
     },
     "facing=south": {
-      "model": "saturatedsands:terracotta/petal/beige"
+      "model": "saturatedsands:block/beige_petal_terracotta"
     },
     "facing=west": {
-      "model": "saturatedsands:terracotta/petal/beige",
+      "model": "saturatedsands:block/beige_petal_terracotta",
       "y": 90
     }
   }

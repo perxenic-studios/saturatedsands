@@ -1,18 +1,18 @@
 {
   "variants": {
     "facing=east": {
-      "model": "saturatedsands:terracotta/fan/light_gray",
+      "model": "saturatedsands:block/light_gray_fan_terracotta",
       "y": 270
     },
     "facing=north": {
-      "model": "saturatedsands:terracotta/fan/light_gray",
+      "model": "saturatedsands:block/light_gray_fan_terracotta",
       "y": 180
     },
     "facing=south": {
-      "model": "saturatedsands:terracotta/fan/light_gray"
+      "model": "saturatedsands:block/light_gray_fan_terracotta"
     },
     "facing=west": {
-      "model": "saturatedsands:terracotta/fan/light_gray",
+      "model": "saturatedsands:block/light_gray_fan_terracotta",
       "y": 90
     }
   }

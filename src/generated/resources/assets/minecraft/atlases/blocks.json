@@ -1,0 +1,57 @@
+{
+  "sources": [
+    {
+      "type": "minecraft:paletted_permutations",
+      "palette_key": "saturatedsands:terracotta/color_palettes/pattern_palette",
+      "permutations": {
+        "beige": "saturatedsands:terracotta/color_palettes/beige",
+        "black": "saturatedsands:terracotta/color_palettes/black",
+        "blue": "saturatedsands:terracotta/color_palettes/blue",
+        "brown": "saturatedsands:terracotta/color_palettes/brown",
+        "coral": "saturatedsands:terracotta/color_palettes/coral",
+        "cyan": "saturatedsands:terracotta/color_palettes/cyan",
+        "ginger": "saturatedsands:terracotta/color_palettes/ginger",
+        "gray": "saturatedsands:terracotta/color_palettes/gray",
+        "green": "saturatedsands:terracotta/color_palettes/green",
+        "light_blue": "saturatedsands:terracotta/color_palettes/light_blue",
+        "light_gray": "saturatedsands:terracotta/color_palettes/light_gray",
+        "lime": "saturatedsands:terracotta/color_palettes/lime",
+        "magenta": "saturatedsands:terracotta/color_palettes/magenta",
+        "maroon": "saturatedsands:terracotta/color_palettes/maroon",
+        "olive": "saturatedsands:terracotta/color_palettes/olive",
+        "orange": "saturatedsands:terracotta/color_palettes/orange",
+        "pink": "saturatedsands:terracotta/color_palettes/pink",
+        "purple": "saturatedsands:terracotta/color_palettes/purple",
+        "red": "saturatedsands:terracotta/color_palettes/red",
+        "rose": "saturatedsands:terracotta/color_palettes/rose",
+        "tan": "saturatedsands:terracotta/color_palettes/tan",
+        "white": "saturatedsands:terracotta/color_palettes/white",
+        "yellow": "saturatedsands:terracotta/color_palettes/yellow"
+      },
+      "textures": [
+        "saturatedsands:terracotta/block/potion",
+        "saturatedsands:terracotta/block/spoke",
+        "saturatedsands:terracotta/block/arrow",
+        "saturatedsands:terracotta/block/ring",
+        "saturatedsands:terracotta/block/cross",
+        "saturatedsands:terracotta/block/creep",
+        "saturatedsands:terracotta/block/leaf",
+        "saturatedsands:terracotta/block/sun",
+        "saturatedsands:terracotta/block/heart",
+        "saturatedsands:terracotta/block/crawl",
+        "saturatedsands:terracotta/block/target",
+        "saturatedsands:terracotta/block/flower",
+        "saturatedsands:terracotta/block/blade",
+        "saturatedsands:terracotta/block/geo",
+        "saturatedsands:terracotta/block/fan",
+        "saturatedsands:terracotta/block/petal",
+        "saturatedsands:terracotta/block/modern",
+        "saturatedsands:terracotta/block/fish",
+        "saturatedsands:terracotta/block/plant",
+        "saturatedsands:terracotta/block/bird",
+        "saturatedsands:terracotta/block/knot",
+        "saturatedsands:terracotta/block/frame"
+      ]
+    }
+  ]
+}
