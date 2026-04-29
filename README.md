@@ -4,7 +4,7 @@
 
 **Saturated Sands** expands upon the faded terracotta in mirage, providing a miriad of colours to build murals, flooring or add extra detail and shading to any build.
 
-### ✨ Features
+### Features
 
 * **Patterned Terracotta:** Dye your faded terracotta with any dye colou.r
 
@@ -17,3 +17,5 @@
 #### Credits
 
 [Iris](https://modrinth.com/mod/iris) and [Complementary](https://modrinth.com/shader/complementary-reimagined) were used in the creation of some screenshots/promotional material.
+
+Note: No AI was used in this project, including in the README, this is all written by a human.
